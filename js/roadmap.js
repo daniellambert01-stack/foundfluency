@@ -48,7 +48,7 @@
     return Array.prototype.map.call(form.querySelectorAll("input[name=" + name + "]:checked"), function (x) { return x.value; });
   }
 
-  // Strategy types from the maturity model used in the Novalingua AI concept
+  // Strategy types from the maturity model used in the Found Fluency AI concept
   var TYPES = [
     { id: "pragmatic", de: "Pragmatisch", en: "Pragmatic",
       tde: "Sie starten mit KI. Ein kleiner, klar abgegrenzter Pilot mit schnellem Nutzen schafft Vertrauen und erste Daten.",
@@ -60,8 +60,8 @@
       tde: "Ziele und Daten sind da. Jetzt geht es darum, die Nutzung in die Breite zu tragen: Pilot kurz halten, Rollout früh planen.",
       ten: "Goals and data are in place. Now it's about spreading usage: keep the pilot short and plan rollout early." },
     { id: "steady", de: "Stetig", en: "Steady",
-      tde: "KI ist bei Ihnen etabliert. Novalingua AI lässt sich direkt in mehreren Bereichen einführen, mit Fokus auf Qualität und Betreuung.",
-      ten: "AI is established in your company. Novalingua AI can be introduced in several departments directly, focusing on quality and ongoing care." }
+      tde: "KI ist bei Ihnen etabliert. Found Fluency AI lässt sich direkt in mehreren Bereichen einführen, mit Fokus auf Qualität und Betreuung.",
+      ten: "AI is established in your company. Found Fluency AI can be introduced in several departments directly, focusing on quality and ongoing care." }
   ];
   var DEPT = { sales: ["Vertrieb", "Sales"], eng: ["Engineering", "Engineering"], finance: ["Controlling", "Finance"],
     mgmt: ["Führung", "Management"], service: ["Service", "Service"], purchasing: ["Einkauf", "Purchasing"] };
@@ -150,8 +150,8 @@
         works_council: d.council, start: d.start, notes: d.notes || "-" })
     }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
-      document.getElementById("res-status").textContent = L("Ihre Angaben wurden an Novalingua gesendet. Wir melden uns innerhalb eines Werktags.",
-        "Your answers have been sent to Novalingua. We'll get back to you within one working day.");
+      document.getElementById("res-status").textContent = L("Ihre Angaben wurden an Found Fluency gesendet. Wir melden uns innerhalb eines Werktags.",
+        "Your answers have been sent to Found Fluency. We'll get back to you within one working day.");
     }).catch(function () { /* the email button remains as the fallback */ });
   }
 

@@ -73,12 +73,12 @@
     $("pp").textContent = eur(total / (people * months));
 
     var summary = [
-      "Plan-Rechner Novalingua", "",
+      "Plan-Rechner Found Fluency", "",
       "Format: " + format, "Gruppe: " + g + " Personen, " + gs + " Termine/Monat", "1:1" + (exec ? " (Executive)" : "") + ": " + o + " Personen, " + os + " Termine/Monat",
       "Dauer je Termin: " + len45 + " Min.", "KI-Lizenzen: " + ai, "Laufzeit: " + months + " Monate",
       "Einmalig: " + eur(once), "Pro Monat: " + eur(monthly), "Gesamt: " + eur(total)
     ].join("\n");
-    $("request").href = "mailto:" + cfg.email + "?subject=" + encodeURIComponent(L("Angebotsanfrage", "Quote request") + " – Novalingua AI") +
+    $("request").href = "mailto:" + cfg.email + "?subject=" + encodeURIComponent(L("Angebotsanfrage", "Quote request") + " – Found Fluency AI") +
       "&body=" + encodeURIComponent(summary);
   }
 

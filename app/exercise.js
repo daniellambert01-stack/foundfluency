@@ -1,4 +1,4 @@
-/* Novalingua AI exercise: the 4 steps of the AI coach.
+/* Found Fluency AI exercise: the 4 steps of the AI coach.
    1 set a goal · 2 speak (Web Speech API, typing as fallback) · 3 rule-based
    feedback · 4 the learner chooses what the trainer may see. */
 (function () {

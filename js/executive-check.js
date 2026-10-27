@@ -1,5 +1,5 @@
 /* Multi-step level & needs assessment. Results are kept in the browser and
-   handed off to the discovery call, booking page and an email to Novalingua. */
+   handed off to the discovery call, booking page and an email to Found Fluency. */
 (function () {
   var cfg = window.NOVA_CONFIG;
   var form = document.getElementById("assessment");
@@ -133,7 +133,7 @@
     sendToCoach(d);
   }
 
-  // Optionally deliver the answers straight to the Novalingua inbox (see formEndpoint in config.js).
+  // Optionally deliver the answers straight to the Found Fluency inbox (see formEndpoint in config.js).
   function sendToCoach(d) {
     if (!cfg.formEndpoint) return;
     var status = document.getElementById("res-email-status");
@@ -155,7 +155,7 @@
       body: JSON.stringify(payload)
     }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
-      status.innerHTML = "<strong>Your answers have been sent to Novalingua.</strong> We will review them personally and reply within one working day.";
+      status.innerHTML = "<strong>Your answers have been sent to Found Fluency.</strong> We will review them personally and reply within one working day.";
     }).catch(function () { /* the email button remains as the fallback */ });
   }
 
@@ -192,7 +192,7 @@
     });
 
     var body = [
-      "Hello Novalingua team,", "", "Here are my assessment answers ahead of our discovery call.", "",
+      "Hello Found Fluency team,", "", "Here are my assessment answers ahead of our discovery call.", "",
       "Name: " + d.name, "Email: " + d.email, "Role: " + d.role, "Company: " + (d.company || "-"),
       "Industry: " + d.industry, "Payment: " + rows[4][1], "",
       "Goals: " + d.goals.join(", "), "Upcoming moment: " + (d.event || "-"), "Ready by: " + rows[3][1], "",

@@ -4,8 +4,8 @@
  * falls back to the contact page.
  */
 window.NOVA_CONFIG = {
-  brand: "Novalingua",
-  product: "Novalingua AI",
+  brand: "Found Fluency",
+  product: "Found Fluency AI",
   email: "daniel.lambert01@gmail.com",
 
   // Sprach-Roadmap answers are delivered to this Gmail inbox via FormSubmit.
@@ -28,10 +28,10 @@ window.NOVA_CONFIG = {
 
   // Programme names used by the personal Executive Check
   PROGRAMMES: {
-    executive: "Novalingua Executive · 1:1 Coaching",
-    presentation: "Novalingua Executive · Presentation & Pitch",
-    corporate: "Novalingua · Team Training",
-    interview: "Novalingua Executive · Interview & Career"
+    executive: "Found Fluency Executive · 1:1 Coaching",
+    presentation: "Found Fluency Executive · Presentation & Pitch",
+    corporate: "Found Fluency · Team Training",
+    interview: "Found Fluency Executive · Interview & Career"
   },
 
   // Rates for the plan calculator (EUR). Session prices are the school's price

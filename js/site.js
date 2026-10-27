@@ -1,4 +1,4 @@
-/* Shared behaviour for the Novalingua website and the Novalingua AI platform:
+/* Shared behaviour for the Found Fluency website and the Found Fluency AI platform:
    language switch, header, footer, external links and scroll reveal. */
 (function () {
   var cfg = window.NOVA_CONFIG || { LINKS: {} };
@@ -69,7 +69,7 @@
   header.innerHTML =
     '<div class="container nav">' +
       '<a class="logo" href="' + base + 'index.html"><span class="logo-mark">' + markSvg + "</span>" +
-        "<span>Novalingua<small>" + (isApp ? "Novalingua AI · " + bi("Plattform-Demo", "Platform demo") : bi("Sprachschule", "Language school")) + "</small></span></a>" +
+        "<span>Found Fluency<small>" + (isApp ? "Found Fluency AI · " + bi("Plattform-Demo", "Platform demo") : bi("Sprachschule", "Language school")) + "</small></span></a>" +
       '<ul class="nav-links" id="nav-links">' +
         NAV.map(function (n) {
           return '<li><a href="' + n.href + '"' + (n.id === page ? ' aria-current="page"' : "") + ">" + bi(n.de, n.en) + "</a></li>";
@@ -110,9 +110,9 @@
     footer.className = "site-footer";
     footer.innerHTML =
       '<div class="container"><div class="footer-grid">' +
-        '<div><a class="logo" href="' + base + 'index.html"><span class="logo-mark">' + markSvg + "</span><span>Novalingua</span></a>" +
-          '<p style="margin-top:16px;max-width:38ch">' + bi("Sprachschule für Berufstätige und Unternehmen: online, in Präsenz oder hybrid, mit Novalingua AI.",
-            "Language school for professionals and companies: online, in person or hybrid, with Novalingua AI.") + "</p>" +
+        '<div><a class="logo" href="' + base + 'index.html"><span class="logo-mark">' + markSvg + "</span><span>Found Fluency</span></a>" +
+          '<p style="margin-top:16px;max-width:38ch">' + bi("Sprachschule für Berufstätige und Unternehmen: online, in Präsenz oder hybrid, mit Found Fluency AI.",
+            "Language school for professionals and companies: online, in person or hybrid, with Found Fluency AI.") + "</p>" +
           '<a class="btn btn--sm" data-link="discovery">' + bi("Gespräch buchen", "Book a call") + "</a></div>" +
         "<div><h4>" + bi("Ablauf", "Process") + "</h4><ul>" +
           '<li><a href="' + base + 'roadmap.html">01 ' + bi("Sprach-Roadmap", "Language Roadmap") + "</a></li>" +
@@ -121,14 +121,14 @@
           '<li><a href="' + base + 'process.html#pilot">04 ' + bi("Pilot &amp; Rollout", "Pilot &amp; rollout") + "</a></li>" +
           '<li><a href="' + base + 'process.html#care">05 ' + bi("Betreuung", "Ongoing care") + "</a></li>" +
         "</ul></div>" +
-        "<div><h4>Novalingua</h4><ul>" +
+        "<div><h4>Found Fluency</h4><ul>" +
           NAV.map(function (n) { return '<li><a href="' + n.href + '">' + bi(n.de, n.en) + "</a></li>"; }).join("") +
           '<li><a href="' + base + 'about.html">' + bi("Über uns", "About us") + "</a></li>" +
           '<li><a href="' + base + 'trust.html">' + bi("Datenschutz &amp; KI", "Privacy &amp; AI") + "</a></li>" +
           '<li><a href="' + base + 'book.html">' + bi("Buchen &amp; bezahlen", "Book &amp; pay") + "</a></li>" +
           '<li><a data-link="linkedin">LinkedIn</a></li>' +
         "</ul></div>" +
-      '</div><div class="footer-bottom"><span>© ' + new Date().getFullYear() + " Novalingua · Speak up. Get heard.</span>" +
+      '</div><div class="footer-bottom"><span>© ' + new Date().getFullYear() + " Found Fluency · Speak up. Get heard.</span>" +
         '<span><a href="' + base + 'impressum.html">Impressum</a> · <a href="' + base + 'datenschutz.html">' + bi("Datenschutz", "Privacy") + '</a> · <a href="mailto:' + cfg.email + '">' + cfg.email + "</a></span></div></div>";
     body.appendChild(footer);
   }
