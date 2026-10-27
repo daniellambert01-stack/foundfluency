@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The glowing microphone orb from the Found Fluency AI app (night mode) */
+.orb-app {
+  display: block;
+  background: radial-gradient(circle at 35% 30%, #f8d9c4, #e4916c 55%, #c2603e);
+  box-shadow: 0 0 40px 10px rgba(228, 145, 108, 0.45), 0 0 110px 40px rgba(232, 134, 84, 0.18),
+    inset -8px -10px 24px rgba(150, 60, 30, 0.25), inset 6px 8px 18px rgba(255, 240, 228, 0.35);
+  animation: orbBreathe 4s ease-in-out infinite;
+}
+@keyframes orbBreathe { 50% { transform: scale(1.05); } }
+@media (prefers-reduced-motion: reduce) { .orb-app, .animate-orb, .wave-bar { animation: none !important; } }
+.legal a { color: #b4502b; text-decoration: underline; }
+.legal p { margin-top: 0.75rem; }
