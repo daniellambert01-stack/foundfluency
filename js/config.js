@@ -37,10 +37,10 @@ window.NOVA_CONFIG = {
   // Rates for the plan calculator (EUR). Session prices are the school's price
   // list; the support and platform fees come from the original concept deck.
   PRICING: {
-    groupBase: 55,        // group session of 45 min: first person
-    groupPerExtra: 7.5,   // each additional person in the group session
+    groupBase: 65,        // group session of 45 min: minimum of 2 people
+    groupPerExtra: 7.5,   // each person beyond the first 2
     oneToOne: 60,         // 1:1 session of 45 min
-    oneToOneExec: 65,     // executive 1:1 session of 45 min
+    oneToOneExec: 70,     // executive 1:1 session of 45 min
     aiLicence: 30,        // AI coach licence per person per month
     evaluation: 220,      // monthly trainer evaluation (cockpit)
     checkIns: 110,        // check-ins in M1, M3 and M6, spread per month

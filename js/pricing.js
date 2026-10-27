@@ -40,7 +40,7 @@
     var onsite = format === "online" ? 0 : format === "onsite" ? allSessions : Math.min(num("onsite", 32), allSessions);
     if (format === "onsite") $("onsite").value = allSessions;
 
-    var groupCost = g > 0 ? gs * len * (P.groupBase + P.groupPerExtra * (g - 1)) : 0;
+    var groupCost = g > 0 ? gs * len * (P.groupBase + P.groupPerExtra * Math.max(0, g - 2)) : 0;
     var exec = $("oneType").value === "exec";
     var oneCost = o * os * len * (exec ? P.oneToOneExec : P.oneToOne);
     var aiCost = ai * P.aiLicence;
