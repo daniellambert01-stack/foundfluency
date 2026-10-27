@@ -2,7 +2,7 @@
 
 **Speak up. Get heard.** Live-Training + KI-Sprachcoach.
 
-Company website and a working platform prototype, based on the concept deck "SpeakUp – EchazTec (Entwurf v10)". Static HTML, CSS and JavaScript with no build step. German with an English toggle (DE/EN, top right).
+Company website and a working platform prototype, based on the original concept deck (Entwurf v10). Static HTML, CSS and JavaScript with no build step. German with an English toggle (DE/EN, top right).
 
 One company, three offers: **Found Fluency** (language coaching), **Found Fluency AI** (AI practice platform) and **Found Fluency Executive** (premium coaching for leaders).
 

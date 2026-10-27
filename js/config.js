@@ -35,7 +35,7 @@ window.NOVA_CONFIG = {
   },
 
   // Rates for the plan calculator (EUR). Session prices are the school's price
-  // list; the support and platform fees come from the SpeakUp concept deck.
+  // list; the support and platform fees come from the original concept deck.
   PRICING: {
     groupBase: 55,        // group session of 45 min: first person
     groupPerExtra: 7.5,   // each additional person in the group session
