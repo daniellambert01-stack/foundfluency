@@ -6,7 +6,7 @@
 window.NOVA_CONFIG = {
   brand: "Found Fluency",
   product: "Found Fluency AI",
-  email: "daniel.lambert01@gmail.com",
+  email: "info@foundfluency.com",
 
   // Sprach-Roadmap answers are delivered to this Gmail inbox via FormSubmit.
   // The first submission sends a one-time activation email that must be confirmed.
