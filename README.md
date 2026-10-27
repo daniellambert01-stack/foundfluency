@@ -6,7 +6,7 @@ Company website and a working platform prototype, based on the concept deck "Spe
 
 One company, three offers: **Found Fluency** (language coaching), **Found Fluency AI** (AI practice platform) and **Found Fluency Executive** (premium coaching for leaders).
 
-**Live:** https://daniellambert01-stack.github.io/echaztec/
+**Live:** https://www.foundfluency.com/
 
 ## Website
 
