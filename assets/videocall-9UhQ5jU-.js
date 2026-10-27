@@ -1,0 +1,1 @@
+var e=`/assets/videocall-CqGjXkkT.jpg`;export{e as t};
