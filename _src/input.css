@@ -14,3 +14,34 @@
 @media (prefers-reduced-motion: reduce) { .orb-app, .animate-orb, .wave-bar { animation: none !important; } }
 .legal a { color: #b4502b; text-decoration: underline; }
 .legal p { margin-top: 0.75rem; }
+
+/* ---- Design from the second Canva version ---- */
+body { background-color: #1a202b; color: #2b2420; font-family: "Inter", sans-serif; overflow-x: hidden; }
+h1, h2, h3, h4 { font-family: "Cormorant Garamond", serif; }
+
+/* Glass containers over the photographic backgrounds */
+.glass-card-light { background: rgba(255, 253, 249, 0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(234, 218, 201, 0.8); }
+.glass-card-dark { background: rgba(26, 32, 43, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(201, 149, 58, 0.25); }
+
+/* Backgrounds – served from this domain (img/bg-*.jpg); the gradient alone still works if a file is missing */
+.scenic-hero-bg {
+  background-color: #2a2533;
+  background-image: linear-gradient(180deg, rgba(26, 32, 43, 0.72) 0%, rgba(180, 80, 43, 0.55) 50%, rgba(26, 32, 43, 0.92) 100%), url("../img/bg-skyline.jpg");
+  background-attachment: fixed; background-position: center; background-size: cover;
+}
+.scenic-capitals-bg {
+  background-color: #faf4ec;
+  background-image: linear-gradient(180deg, rgba(250, 244, 236, 0.94) 0%, rgba(250, 244, 236, 0.88) 50%, rgba(250, 244, 236, 0.96) 100%), url("../img/bg-world.jpg");
+  background-attachment: fixed; background-position: center; background-size: cover;
+}
+.scenic-oxford-bg {
+  background-color: #1a202b;
+  background-image: linear-gradient(180deg, rgba(26, 32, 43, 0.88) 0%, rgba(26, 32, 43, 0.8) 100%), url("../img/bg-library.jpg");
+  background-attachment: fixed; background-position: center; background-size: cover;
+}
+/* Phones don't support fixed backgrounds well */
+@media (max-width: 1023px) { .scenic-hero-bg, .scenic-capitals-bg, .scenic-oxford-bg { background-attachment: scroll; } }
+
+@keyframes floatGlow { 0%, 100% { transform: translateY(0) scale(1); opacity: 0.85; } 50% { transform: translateY(-16px) scale(1.05); opacity: 1; } }
+.animate-orb { animation: floatGlow 7s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .animate-orb { animation: none; } }

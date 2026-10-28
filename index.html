@@ -3,200 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Found Fluency | Sprachschule Reutlingen & Stuttgart</title>
-    <meta name="description" content="Found Fluency – Englisch & Deutsch für Menschen im Job, bei Reutlingen/Stuttgart und online. Live-Training mit Humor, KI-Sprechcoach für die Zeit dazwischen und Executive Coaching.">
+    <title>Found Fluency | Englisch & Deutsch im Beruf | Reutlingen & Stuttgart</title>
+    <meta name="description" content="Found Fluency – Englisch & Deutsch für Menschen im Job, vom Hallenboden bis in die Chefetage. Live-Training mit Humor bei Reutlingen/Stuttgart und online, ein klarer Ablauf für Unternehmen und ein KI-Sprechcoach für die Zeit dazwischen.">
     <link rel="canonical" href="https://www.foundfluency.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Found Fluency">
     <meta property="og:title" content="Found Fluency – Sprechen lernen. Mit Lachen.">
-    <meta property="og:description" content="Englisch & Deutsch für Menschen im Job – live, mit Humor und einer App für die Zeit dazwischen.">
+    <meta property="og:description" content="Englisch & Deutsch für Menschen im Job – live, mit Humor und einem klaren Plan.">
     <meta property="og:url" content="https://www.foundfluency.com/">
     <meta property="og:image" content="https://www.foundfluency.com/img/og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <!-- Fonts, icons and styles are served from this domain (no Google Fonts, no CDNs – GDPR) -->
+    <!-- Fonts, icons, styles and pictures are served from this domain (no Google Fonts, no CDNs – GDPR) -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="vendor/fa/css/all.min.css">
     <link rel="stylesheet" href="css/site.css">
-    <style>
-        body {
-            background-color: #FAF4EC;
-            color: #2B2420;
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3, h4, .font-serif-custom {
-            font-family: 'Cormorant Garamond', serif;
-        }
-        
-        /* Floating orb glow animation */
-        @keyframes floatGlow {
-            0%, 100% { transform: translateY(0px) scale(1); opacity: 0.85; }
-            50% { transform: translateY(-12px) scale(1.04); opacity: 1; }
-        }
-        .animate-orb {
-            animation: floatGlow 6s ease-in-out infinite;
-        }
-
-        /* Pulse visualizer animation */
-        @keyframes soundWave {
-            0%, 100% { height: 8px; }
-            50% { height: 28px; }
-        }
-        .wave-bar {
-            animation: soundWave 1.2s ease-in-out infinite;
-        }
-        .wave-bar:nth-child(2) { animation-delay: 0.2s; }
-        .wave-bar:nth-child(3) { animation-delay: 0.4s; }
-        .wave-bar:nth-child(4) { animation-delay: 0.1s; }
-        .wave-bar:nth-child(5) { animation-delay: 0.3s; }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FAF4EC;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #D9C3B0;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #B4502B;
-        }
-    </style>
 </head>
 <body class="antialiased selection:bg-terracotta selection:text-white">
 
     <!-- NAVIGATION HEADER -->
-    <header class="sticky top-0 z-40 bg-[#FAF4EC]/90 backdrop-blur-md border-b border-[#EADAC9] transition-all">
+    <header class="sticky top-0 z-40 bg-[#1A202B]/90 backdrop-blur-md border-b border-white/10 text-white transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full bg-terracotta flex items-center justify-center text-white font-serif font-bold text-xl shadow-md transition-transform group-hover:scale-105">
-                    FF
-                </div>
+                <div class="w-11 h-11 rounded-full bg-terracotta flex items-center justify-center text-white font-serif font-bold text-xl shadow-md transition-transform group-hover:scale-105 border-2 border-softGold/40">FF</div>
                 <div class="flex flex-col">
-                    <span class="font-serif font-bold text-2xl tracking-tight leading-none text-textDark">Found Fluency</span>
-                    <span class="text-[10px] uppercase tracking-widest text-tealSec font-semibold">Language & Business</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight leading-none text-white">Found Fluency</span>
+                    <span class="text-[10px] uppercase tracking-widest text-softGold font-semibold mt-0.5" data-de="Englisch & Deutsch im Beruf" data-en="English & German at work">Englisch & Deutsch im Beruf</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
-                <a href="#offers" class="hover:text-terracotta transition-colors text-textDark/80 hover:text-textDark" data-de="Angebote" data-en="Offers">Angebote</a>
-                <a href="#why-us" class="hover:text-terracotta transition-colors text-textDark/80 hover:text-textDark" data-de="Warum wir" data-en="Why Us">Warum wir</a>
-                <a href="#team" class="hover:text-terracotta transition-colors text-textDark/80 hover:text-textDark" data-de="Team" data-en="Team">Team</a>
-                <a href="#pricing" class="hover:text-terracotta transition-colors text-textDark/80 hover:text-textDark" data-de="Preise" data-en="Pricing">Preise</a>
-                <a href="#about-daniel" class="hover:text-terracotta transition-colors text-textDark/80 hover:text-textDark" data-de="Über Daniel" data-en="About Daniel">Über Daniel</a>
+            <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+                <a href="#onsite-experience" class="hover:text-softGold transition-colors text-white/90" data-de="Training" data-en="Training">Training</a>
+                <a href="#process" class="hover:text-softGold transition-colors text-white/90" data-de="So arbeiten wir" data-en="How we work">So arbeiten wir</a>
+                <a href="#offers" class="hover:text-softGold transition-colors text-white/90" data-de="Angebote" data-en="Offers">Angebote</a>
+                <a href="#team" class="hover:text-softGold transition-colors text-white/90" data-de="Team" data-en="Team">Team</a>
+                <a href="#pricing" class="hover:text-softGold transition-colors text-white/90" data-de="Preise" data-en="Pricing">Preise</a>
+                <a href="#about-daniel" class="hover:text-softGold transition-colors text-white/90" data-de="Über Daniel" data-en="About Daniel">Über Daniel</a>
             </nav>
 
-            <!-- Right Controls & CTA -->
             <div class="flex items-center gap-4">
-                <!-- Language Toggle Button -->
-                <button id="langToggleBtn" onclick="toggleLanguage()" aria-label="Sprache wechseln / Switch language" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#D9C3B0] bg-cardBg text-xs font-semibold text-textDark hover:border-terracotta transition-all cursor-pointer shadow-sm">
-                    <span id="langDe" class="text-terracotta font-bold">DE</span>
-                    <span class="text-textDark/30">|</span>
-                    <span id="langEn" class="text-textDark/50">EN</span>
+                <button id="langToggleBtn" onclick="toggleLanguage()" aria-label="Sprache wechseln / Switch language" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white hover:border-softGold transition-all cursor-pointer shadow-sm">
+                    <span id="langDe" class="text-softGold font-bold">DE</span>
+                    <span class="text-white/30">|</span>
+                    <span id="langEn" class="text-white/60">EN</span>
                 </button>
-
-                <!-- Calendly CTA -->
-                <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-semibold tracking-wide text-white bg-terracotta hover:bg-terracottaHover transition-all shadow-warm hover:shadow-warm-hover transform hover:-translate-y-0.5">
-                    <span data-de="Erstgespräch buchen" data-en="Book Free Consultation">Erstgespräch buchen</span>
-                    <i class="fa-solid font-bold fa-arrow-right ml-2 text-[10px]"></i>
+                <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide text-white bg-terracotta hover:bg-terracottaHover transition-all shadow-warm border border-softGold/30">
+                    <span data-de="Erstgespräch buchen" data-en="Book a free call">Erstgespräch buchen</span>
+                    <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
                 </a>
-
-                <!-- Mobile Menu Button -->
-                <button onclick="toggleMobileMenu()" aria-label="Menü" class="md:hidden p-2 rounded-lg text-textDark hover:bg-[#EADAC9]/50 focus:outline-none">
-                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+                <button onclick="toggleMobileMenu()" aria-label="Menü" class="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-cardBg border-b border-[#EADAC9] px-4 pt-2 pb-6 space-y-3">
-            <a href="#offers" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-cream" data-de="Angebote" data-en="Offers">Angebote</a>
-            <a href="#why-us" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-cream" data-de="Warum wir" data-en="Why Us">Warum wir</a>
-            <a href="#team" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-cream" data-de="Team" data-en="Team">Team</a>
-            <a href="#pricing" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-cream" data-de="Preise" data-en="Pricing">Preise</a>
-            <a href="#about-daniel" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-cream" data-de="Über Daniel" data-en="About Daniel">Über Daniel</a>
+        <div id="mobileMenu" class="hidden lg:hidden bg-nightBlue border-b border-white/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="#onsite-experience" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="Training" data-en="Training">Training</a>
+            <a href="#process" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="So arbeiten wir" data-en="How we work">So arbeiten wir</a>
+            <a href="#offers" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="Angebote" data-en="Offers">Angebote</a>
+            <a href="#team" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="Team" data-en="Team">Team</a>
+            <a href="#pricing" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="Preise" data-en="Pricing">Preise</a>
+            <a href="#about-daniel" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium border-b border-white/10" data-de="Über Daniel" data-en="About Daniel">Über Daniel</a>
             <div class="pt-2">
                 <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center inline-block px-5 py-3 rounded-full text-sm font-semibold text-white bg-terracotta shadow-warm">
-                    <span data-de="Erstgespräch buchen" data-en="Book Free Consultation">Erstgespräch buchen</span>
+                    <span data-de="Erstgespräch buchen" data-en="Book a free call">Erstgespräch buchen</span>
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- 1. HERO SECTION -->
-        <section class="relative min-h-[90vh] flex flex-col justify-between overflow-hidden bg-gradient-to-b from-[#F9EFE3] via-[#F8ECE0] to-[#FAF4EC] pt-8 lg:pt-16 pb-20">
-            <!-- Glowing Terracotta Orb Background Visual -->
-            <div class="absolute top-1/4 right-1/2 md:right-[15%] w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-terracotta/40 via-peachLight/60 to-softGold/30 blur-2xl animate-orb -z-0 pointer-events-none"></div>
+        <!-- 1. HERO – skyline background -->
+        <section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden scenic-hero-bg py-16">
+            <div class="absolute top-10 right-[15%] w-96 h-96 rounded-full bg-gradient-to-tr from-terracotta/40 via-warmAmber/30 to-softGold/30 blur-3xl animate-orb pointer-events-none"></div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 my-auto">
-                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-                    
-                    <!-- Left Hero Text -->
-                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-terracotta/20 text-xs font-semibold text-tealSec shadow-sm">
-                            <span class="w-2 h-2 rounded-full bg-tealSec animate-pulse"></span>
-                            <span data-de="Reutlingen & Stuttgart · Online & In-Person" data-en="Reutlingen & Stuttgart · Online & In-Person">Reutlingen & Stuttgart · Online & In-Person</span>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                    <div class="lg:col-span-7 glass-card-dark p-8 sm:p-12 rounded-3xl space-y-6 text-center lg:text-left border border-white/15 shadow-2xl">
+                        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 border border-softGold/40 text-xs font-semibold text-softGold">
+                            <span class="flex h-2 w-2 rounded-full bg-softGold"></span>
+                            <span data-de="Reutlingen · Stuttgart · online" data-en="Reutlingen · Stuttgart · online">Reutlingen · Stuttgart · online</span>
                         </div>
 
-                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-textDark leading-[1.08]">
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.05]">
                             <span data-de="Sprechen lernen." data-en="Learn to speak.">Sprechen lernen.</span><br>
-                            <span class="italic text-terracotta font-normal" data-de="Mit Lachen." data-en="With laughter.">Mit Lachen.</span>
+                            <span class="italic text-softGold font-normal" data-de="Mit Lachen." data-en="With laughter.">Mit Lachen.</span>
                         </h1>
 
-                        <p class="text-lg sm:text-xl text-textDark/80 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed" 
-                           data-de="Das maßgeschneiderte Englisch- & Deutschtraining für Fach- und Führungskräfte im Raum Reutlingen/Stuttgart. Persönlich, ungezwungen und mit echtem Fortschritt."
-                           data-en="Tailored English & German training for working professionals near Reutlingen/Stuttgart. Warm, conversational, and designed for real-world progress.">
-                            Das maßgeschneiderte Englisch- & Deutschtraining für Fach- und Führungskräfte im Raum Reutlingen/Stuttgart. Persönlich, ungezwungen und mit echtem Fortschritt.
+                        <p class="text-lg sm:text-xl text-white/90 font-light leading-relaxed"
+                           data-de="Englisch und Deutsch für Menschen im Job – vom Hallenboden bis in die Chefetage. Live-Training mit Humor, ein klarer Plan für Ihr Team und eine KI-App für die Zeit dazwischen."
+                           data-en="English and German for working people – from the shop floor to the boardroom. Live training with humour, a clear plan for your team and an AI app for the time in between.">
+                            Englisch und Deutsch für Menschen im Job – vom Hallenboden bis in die Chefetage. Live-Training mit Humor, ein klarer Plan für Ihr Team und eine KI-App für die Zeit dazwischen.
                         </p>
 
-                        <!-- CTA buttons -->
                         <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                            <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full sm:w-auto px-7 py-4 rounded-full text-base font-semibold text-white bg-terracotta hover:bg-terracottaHover transition-all shadow-warm hover:shadow-warm-hover transform hover:-translate-y-0.5 text-center">
-                                <span data-de="Kostenloses Erstgespräch buchen" data-en="Book Free Consultation">Kostenloses Erstgespräch buchen</span>
+                            <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-white bg-terracotta hover:bg-terracottaHover transition-all shadow-warm text-center border border-softGold/30">
+                                <span data-de="Kostenloses Erstgespräch buchen" data-en="Book a free first call">Kostenloses Erstgespräch buchen</span>
                             </a>
-                            <a href="#offers" class="w-full sm:w-auto px-7 py-4 rounded-full text-base font-semibold text-textDark bg-white/90 border border-[#D9C3B0] hover:bg-white hover:border-terracotta transition-all shadow-sm text-center">
-                                <span data-de="Angebote entdecken" data-en="Explore Offers">Angebote entdecken</span>
+                            <a href="#process" class="w-full sm:w-auto px-7 py-4 rounded-full text-base font-semibold text-white bg-white/10 border border-white/30 hover:bg-white/20 transition-all text-center">
+                                <span data-de="So arbeiten wir" data-en="How we work">So arbeiten wir</span>
                             </a>
                         </div>
 
-                        <!-- Experience badge -->
-                        <div class="pt-6 flex items-center justify-center lg:justify-start gap-3 text-xs text-textDark/70">
-                            <span class="w-9 h-9 rounded-full bg-terracotta/10 text-terracotta flex items-center justify-center"><i class="fa-solid fa-mug-hot"></i></span>
-                            <span class="font-medium text-left" data-de="17 Jahre Training & Coaching · Tausende Lernende · vom Hallenboden bis in die Chefetage" data-en="17 years of training & coaching · thousands of learners · from shop floor to boardroom">17 Jahre Training & Coaching · Tausende Lernende · vom Hallenboden bis in die Chefetage</span>
+                        <div class="pt-5 flex items-center justify-center lg:justify-start gap-3 text-xs text-white/85 border-t border-white/10">
+                            <i class="fa-solid fa-mug-hot text-softGold text-base"></i>
+                            <span class="font-medium" data-de="17 Jahre · Tausende Lernende · von der Abiturklasse bis zum CEO" data-en="17 years · thousands of learners · from final-year pupils to CEOs">17 Jahre · Tausende Lernende · von der Abiturklasse bis zum CEO</span>
                         </div>
                     </div>
 
-                    <!-- Right Hero Card / Visual Orb Holder -->
-                    <div class="lg:col-span-5 relative flex justify-center">
-                        <div class="w-full max-w-md bg-cardBg rounded-3xl p-6 sm:p-8 border border-[#EADAC9] shadow-warm relative z-10">
-                            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-6 shadow-sm">
-                                <img src="img/team-laughing.webp" width="1024" height="689" alt="Trainer und Team lachen gemeinsam bei einer Englischstunde mit Kaffee" class="w-full h-full object-cover">
-                                <div class="absolute bottom-2 right-2 bg-textDark/75 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded">
-                                    Symbolbild, KI-generiert
-                                </div>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="w-full max-w-md glass-card-light rounded-3xl p-6 sm:p-7 shadow-oxford relative z-10 border border-[#EADAC9]">
+                            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 shadow-md group border border-[#EADAC9]">
+                                <img src="img/daniel.webp" width="1024" height="693" alt="Daniel Lambert" class="w-full h-full object-cover object-[35%_30%] transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute bottom-2 right-2 bg-textDark/85 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
+                                <div class="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full shadow" data-de="Gründer & Head Coach" data-en="Founder & head coach">Gründer & Head Coach</div>
                             </div>
-
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2 text-terracotta font-serif text-lg font-bold">
-                                    <i class="fa-solid fa-mug-hot"></i>
-                                    <span data-de="Oxford Study meets Good Coffee Break" data-en="Oxford study meets good coffee break">Oxford Study meets Good Coffee Break</span>
+                            <div class="space-y-3 text-textDark">
+                                <div class="flex items-center gap-2 text-terracotta font-serif text-xl font-bold">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <span data-de="Ehrlich, ohne unhöflich zu sein." data-en="Honest, without being rude.">Ehrlich, ohne unhöflich zu sein.</span>
                                 </div>
-                                <p class="text-xs text-textDark/80 leading-relaxed font-light" 
-                                   data-de="„Sprachen lernen sollte sich nie wie eine lästige Pflicht anfühlen. Bei uns treffen fundierte Methoden auf eine entspannte, ermutigende Atmosphäre.“"
-                                   data-en="“Learning a language should never feel like a chore. With us, solid methodology meets a relaxed, encouraging atmosphere.”">
-                                    „Sprachen lernen sollte sich nie wie eine lästige Pflicht anfühlen. Bei uns treffen fundierte Methoden auf eine entspannte, ermutigende Atmosphäre.“
+                                <p class="text-sm text-textDark/85 leading-relaxed"
+                                   data-de="„Ich weiß, wie es ist, wenn etwas schwer zu lernen ist. Darum erkläre ich so, dass es ankommt – und mit so viel Humor, dass die Zeit verfliegt.“"
+                                   data-en="“I know what it's like when something is hard to learn. So I explain things in a way that lands – with so much humour that time flies.”">
+                                    „Ich weiß, wie es ist, wenn etwas schwer zu lernen ist. Darum erkläre ich so, dass es ankommt – und mit so viel Humor, dass die Zeit verfliegt.“
                                 </p>
-                                <div class="pt-2 flex items-center justify-between border-t border-cream text-xs font-semibold text-tealSec">
+                                <div class="pt-3 flex items-center justify-between border-t border-[#EADAC9] text-xs font-semibold text-tealSec">
                                     <span>Daniel Lambert</span>
-                                    <span class="font-normal text-textDark/60" data-de="Gründer & Head Trainer" data-en="Founder & Head Trainer">Gründer & Head Trainer</span>
+                                    <span class="font-normal text-textDark/70" data-de="Kanadier bei Reutlingen" data-en="A Canadian near Reutlingen">Kanadier bei Reutlingen</span>
                                 </div>
                             </div>
                         </div>
@@ -204,132 +141,161 @@
 
                 </div>
             </div>
-
-            <!-- SVG Skyline of Reutlingen / Old Towers & Spires Overlay -->
-            <div class="w-full relative z-0 mt-8 opacity-40">
-                <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 sm:h-24 fill-[#B4502B]/20 stroke-terracotta/30">
-                    <path d="M0,120 L0,95 L30,95 L30,80 L40,70 L50,80 L50,95 L120,95 L130,50 L140,30 L150,50 L160,95 L220,95 L240,60 L250,60 L260,95 L350,95 L360,40 L375,15 L390,40 L400,95 L480,95 L490,75 L510,75 L520,95 L620,95 L630,35 L645,10 L660,35 L670,95 L760,95 L780,55 L800,95 L900,95 L915,45 L930,95 L1020,95 L1035,25 L1050,95 L1200,95 L1200,120 Z" />
-                </svg>
-            </div>
         </section>
 
-        <!-- 2. FOUR PILLARS SECTION -->
-        <section id="why-us" class="py-20 bg-cardBg border-y border-[#EADAC9]/60">
+        <!-- 2. TRAINING – world map background -->
+        <section id="onsite-experience" class="py-24 scenic-capitals-bg relative border-y border-[#EADAC9]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-textDark" data-de="Unsere Philosophie" data-en="Our Philosophy">Unsere Philosophie</h2>
-                    <p class="text-textDark/70 text-base" data-de="Vier Säulen für spürbaren Fortschritt ohne Hemmungen." data-en="Four pillars for noticeable progress without stress.">Vier Säulen für spürbaren Fortschritt ohne Hemmungen.</p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Pillar 1 -->
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9] hover:bg-cream transition-all duration-300 hover:-translate-y-1 shadow-sm group">
-                        <div class="w-14 h-14 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-2xl mb-6 group-hover:bg-terracotta group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-face-smile"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold mb-3 text-textDark" data-de="Lachen" data-en="Laughter">Lachen</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed font-light"
-                           data-de="Wer lacht, vergisst die Angst vor Fehlern. Wir schaffen eine vertraute Atmosphäre, in der Sprechen wieder leicht fällt."
-                           data-en="Laughter removes the fear of making mistakes. We create a friendly space where speaking feels effortless again.">
-                            Wer lacht, vergisst die Angst vor Fehlern. Wir schaffen eine vertraute Atmosphäre, in der Sprechen wieder leicht fällt.
-                        </p>
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 bg-cream/90 backdrop-blur-md p-8 rounded-3xl border border-[#EADAC9] shadow-warm">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-softGold/20 border border-softGold/40 text-xs font-bold text-terracotta">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span data-de="Vor Ort, online oder hybrid" data-en="On site, online or hybrid">Vor Ort, online oder hybrid</span>
                     </div>
-
-                    <!-- Pillar 2 -->
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9] hover:bg-cream transition-all duration-300 hover:-translate-y-1 shadow-sm group">
-                        <div class="w-14 h-14 rounded-2xl bg-tealSec/10 text-tealSec flex items-center justify-center text-2xl mb-6 group-hover:bg-tealSec group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold mb-3 text-textDark" data-de="Lernen" data-en="Learning">Lernen</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed font-light"
-                           data-de="Kein stures Grammatik-Büffeln. Praxisrelevanter Wortschatz für Ihre Meetings, E-Mails und Präsentationen."
-                           data-en="No dry grammar drills. Practical vocabulary tailored for your real-world meetings, emails, and presentations.">
-                            Kein stures Grammatik-Büffeln. Praxisrelevanter Wortschatz für Ihre Meetings, E-Mails und Präsentationen.
-                        </p>
-                    </div>
-
-                    <!-- Pillar 3 -->
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9] hover:bg-cream transition-all duration-300 hover:-translate-y-1 shadow-sm group">
-                        <div class="w-14 h-14 rounded-2xl bg-softGold/10 text-softGold flex items-center justify-center text-2xl mb-6 group-hover:bg-softGold group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-mug-hot"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold mb-3 text-textDark" data-de="Kaffee" data-en="Coffee">Kaffee</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed font-light"
-                           data-de="Fühlt sich an wie ein echtes Gespräch unter guten Freunden. Locker, menschlich und auf Augenhöhe."
-                           data-en="Feels like a genuine chat over good coffee with an old friend. Relaxed, human, and authentic.">
-                            Fühlt sich an wie ein echtes Gespräch unter guten Freunden. Locker, menschlich und auf Augenhöhe.
-                        </p>
-                    </div>
-
-                    <!-- Pillar 4 -->
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9] hover:bg-cream transition-all duration-300 hover:-translate-y-1 shadow-sm group">
-                        <div class="w-14 h-14 rounded-2xl bg-nightBlue/10 text-nightBlue flex items-center justify-center text-2xl mb-6 group-hover:bg-nightBlue group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold mb-3 text-textDark" data-de="Ziele" data-en="Goals">Ziele</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed font-light"
-                           data-de="Klar strukturierter Weg vom Status quo zu Verhandlungssicherheit & Eloquenz im beruflichen Alltag."
-                           data-en="A clearly structured path from your status quo to fluency and confidence in professional settings.">
-                            Klar strukturierter Weg vom Status quo zu Verhandlungssicherheit & Eloquenz im beruflichen Alltag.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 3. THREE OFFERS SECTION -->
-        <section id="offers" class="py-24 bg-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Maßgeschneiderte Formate" data-en="Tailored Formats">Maßgeschneiderte Formate</span>
-                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Unsere 3 Lernangebote" data-en="Our 3 Offerings">Unsere 3 Lernangebote</h2>
-                    <p class="text-textDark/75 text-base sm:text-lg font-light" data-de="Wählen Sie das Format, das am besten zu Ihrem Kalender und Ihren Zielen passt." data-en="Choose the format that fits best with your schedule and goals.">
-                        Wählen Sie das Format, das am besten zu Ihrem Kalender und Ihren Zielen passt.
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Lernen dort, wo Ihre Arbeit passiert" data-en="Learning where your work happens">Lernen dort, wo Ihre Arbeit passiert</h2>
+                    <p class="text-textDark/80 text-base sm:text-lg leading-relaxed"
+                       data-de="Wir kommen zu Ihnen ins Unternehmen in Reutlingen, Stuttgart und Umgebung – oder treffen uns online. Geübt wird an Ihren echten Situationen: Meetings, Telefonate, Präsentationen und Smalltalk."
+                       data-en="We come to your company in Reutlingen, Stuttgart and the surrounding area – or meet online. We practise your real situations: meetings, calls, presentations and small talk.">
+                        Wir kommen zu Ihnen ins Unternehmen in Reutlingen, Stuttgart und Umgebung – oder treffen uns online. Geübt wird an Ihren echten Situationen: Meetings, Telefonate, Präsentationen und Smalltalk.
                     </p>
                 </div>
 
                 <div class="grid lg:grid-cols-3 gap-8">
-                    
-                    <!-- Offer 1: Found Fluency Live -->
-                    <div class="bg-cardBg rounded-3xl p-8 border border-[#EADAC9] shadow-warm flex flex-col justify-between relative">
+                    <div class="glass-card-light rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between group hover:-translate-y-1 transition-all">
                         <div>
-                            <div class="relative rounded-2xl overflow-hidden aspect-video mb-6">
-                                <img src="img/coffee-workshop.webp" width="1024" height="689" loading="lazy" alt="Trainer mit Kaffeetasse im Gespräch mit einem Team" class="w-full h-full object-cover">
-                                <div class="absolute bottom-2 right-2 bg-textDark/75 text-white text-[9px] px-2 py-0.5 rounded">Symbolbild, KI-generiert</div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-5 border border-[#EADAC9]">
+                                <img src="img/team-whiteboard.webp" width="1024" height="689" loading="lazy" alt="Trainer mit Kaffeetasse erklärt einem Team am Whiteboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-2 right-2 bg-textDark/80 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
+                                <span class="absolute top-3 left-3 bg-tealSec text-white text-[10px] font-bold px-2.5 py-1 rounded-full" data-de="Präsentieren" data-en="Presenting">Präsentieren</span>
                             </div>
-                            <span class="inline-block px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold mb-3" data-de="Online, In-Person oder Hybrid" data-en="Online, In-Person or Hybrid">Online, In-Person oder Hybrid</span>
-                            <h3 class="text-3xl font-serif font-bold text-textDark mb-3">Found Fluency</h3>
-                            <p class="text-sm text-textDark/75 leading-relaxed font-light mb-6"
-                               data-de="Interaktives Sprachtraining für Teams & Einzelpersonen. Fokus auf flüssiges Sprechen, Fachvokabular und Sicherheit im Berufsalltag."
-                               data-en="Interactive language training for teams & individuals. Focus on speaking fluency, business vocabulary, and confidence at work.">
-                                Interaktives Sprachtraining für Teams & Einzelpersonen. Fokus auf flüssiges Sprechen, Fachvokabular und Sicherheit im Berufsalltag.
+                            <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Fachliches verständlich erklären" data-en="Explaining your expertise clearly">Fachliches verständlich erklären</h3>
+                            <p class="text-sm text-textDark/80 leading-relaxed mb-4"
+                               data-de="Komplexe Themen so auf Englisch erklären, dass internationale Kolleginnen und Kunden folgen können – klar, ruhig und überzeugend."
+                               data-en="Explain complex topics in English so that international colleagues and customers can follow – clearly, calmly and convincingly.">
+                                Komplexe Themen so auf Englisch erklären, dass internationale Kolleginnen und Kunden folgen können – klar, ruhig und überzeugend.
                             </p>
-                            <ul class="space-y-2.5 text-xs text-textDark/80 mb-8 font-medium">
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-terracotta"></i>
-                                    <span data-de="Muttersprachliche Trainer" data-en="Native speaker trainers">Muttersprachliche Trainer</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-terracotta"></i>
-                                    <span data-de="Flexible Zeiten vor Ort & Remote" data-en="Flexible schedule on-site & remote">Flexible Zeiten vor Ort & Remote</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-terracotta"></i>
-                                    <span data-de="Branchenspezifische Inhalte" data-en="Industry-specific content">Branchenspezifische Inhalte</span>
-                                </li>
+                        </div>
+                        <div class="pt-3 border-t border-[#EADAC9] flex items-center justify-between text-xs text-textDark/70 font-medium">
+                            <span><i class="fa-solid fa-location-dot text-terracotta mr-1"></i> <span data-de="Teams & Abteilungen" data-en="Teams & departments">Teams & Abteilungen</span></span>
+                            <span data-de="vor Ort oder online" data-en="on site or online">vor Ort oder online</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card-light rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between group hover:-translate-y-1 transition-all">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-5 border border-[#EADAC9]">
+                                <img src="img/coffee-workshop.webp" width="1024" height="689" loading="lazy" alt="Gruppe lacht im Meetingraum mit Kaffee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-2 right-2 bg-textDark/80 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
+                                <span class="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-bold px-2.5 py-1 rounded-full" data-de="Meetings & Smalltalk" data-en="Meetings & small talk">Meetings & Smalltalk</span>
+                            </div>
+                            <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Sicher im Gespräch" data-en="Confident in conversation">Sicher im Gespräch</h3>
+                            <p class="text-sm text-textDark/80 leading-relaxed mb-4"
+                               data-de="Rollenspiele für Meetings, Kundengespräche und Kick-offs. Fehler sind hier ausdrücklich erlaubt – damit es im Ernstfall sitzt."
+                               data-en="Role-plays for meetings, customer conversations and kick-offs. Mistakes are explicitly welcome here – so it works when it counts.">
+                                Rollenspiele für Meetings, Kundengespräche und Kick-offs. Fehler sind hier ausdrücklich erlaubt – damit es im Ernstfall sitzt.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-[#EADAC9] flex items-center justify-between text-xs text-textDark/70 font-medium">
+                            <span><i class="fa-solid fa-user-group text-tealSec mr-1"></i> <span data-de="Kleingruppen (2–6)" data-en="Small groups (2–6)">Kleingruppen (2–6)</span></span>
+                            <span data-de="echte Situationen" data-en="real situations">echte Situationen</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card-light rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between group hover:-translate-y-1 transition-all">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-5 border border-[#EADAC9]">
+                                <img src="img/team-laughing.webp" width="1024" height="689" loading="lazy" alt="Trainer und Team lachen gemeinsam bei einer Englischstunde" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-2 right-2 bg-textDark/80 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
+                                <span class="absolute top-3 left-3 bg-softGold text-nightBlue text-[10px] font-bold px-2.5 py-1 rounded-full" data-de="Mit Humor" data-en="With humour">Mit Humor</span>
+                            </div>
+                            <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Wie eine gute Kaffeepause" data-en="Like a good coffee break">Wie eine gute Kaffeepause</h3>
+                            <p class="text-sm text-textDark/80 leading-relaxed mb-4"
+                               data-de="Es wird viel gelacht – und genau dann bleibt etwas hängen. Am Ende einer Stunde hören wir am häufigsten: „Was, schon vorbei?“"
+                               data-en="There's a lot of laughter – and that's exactly when things stick. At the end of a lesson, the most common line is: “What, over already?”">
+                                Es wird viel gelacht – und genau dann bleibt etwas hängen. Am Ende einer Stunde hören wir am häufigsten: „Was, schon vorbei?“
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-[#EADAC9] flex items-center justify-between text-xs text-textDark/70 font-medium">
+                            <span><i class="fa-solid fa-shield-heart text-[#8A6420] mr-1"></i> <span data-de="Geschützter Raum" data-en="A safe space">Geschützter Raum</span></span>
+                            <span data-de="kein Lehrbuch-Drill" data-en="no textbook drills">kein Lehrbuch-Drill</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. HOW WE WORK – a clear, transparent process -->
+        <section id="process" class="py-20 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="So arbeiten wir" data-en="How we work">So arbeiten wir</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Vom Erstgespräch zum spürbaren Fortschritt" data-en="From the first call to noticeable progress">Vom Erstgespräch zum spürbaren Fortschritt</h2>
+                    <p class="text-textDark/75 text-base sm:text-lg" data-de="Ein klarer, transparenter Ablauf – für Einzelpersonen genauso wie für ganze Teams." data-en="A clear, transparent process – for individuals as well as whole teams.">Ein klarer, transparenter Ablauf – für Einzelpersonen genauso wie für ganze Teams.</p>
+                </div>
+
+                <ol class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+                    <li class="bg-cardBg p-7 rounded-3xl border border-[#EADAC9] shadow-warm">
+                        <span class="font-serif text-5xl font-bold text-terracotta">1</span>
+                        <h3 class="mt-3 text-2xl font-serif font-bold text-textDark" data-de="Erstgespräch" data-en="First call">Erstgespräch</h3>
+                        <p class="mt-2 text-sm text-textDark/80 leading-relaxed" data-de="30 Minuten, kostenlos, per Zoom. Wir klären Ziele, Rahmen und wer teilnimmt. Passt es nicht, sage ich es ehrlich." data-en="30 minutes, free, via Zoom. We clarify goals, scope and who takes part. If it's not a fit, I'll tell you honestly.">30 Minuten, kostenlos, per Zoom. Wir klären Ziele, Rahmen und wer teilnimmt. Passt es nicht, sage ich es ehrlich.</p>
+                    </li>
+                    <li class="bg-cardBg p-7 rounded-3xl border border-[#EADAC9] shadow-warm">
+                        <span class="font-serif text-5xl font-bold text-tealSec">2</span>
+                        <h3 class="mt-3 text-2xl font-serif font-bold text-textDark" data-de="Einstufung" data-en="Placement">Einstufung</h3>
+                        <p class="mt-2 text-sm text-textDark/80 leading-relaxed" data-de="Ein kurzes Gespräch pro Person, rund 10 Minuten – praktisch statt Prüfung. So wissen wir, wo jede und jeder steht." data-en="A short conversation per person, about 10 minutes – practical, not an exam. That way we know where everyone stands.">Ein kurzes Gespräch pro Person, rund 10 Minuten – praktisch statt Prüfung. So wissen wir, wo jede und jeder steht.</p>
+                    </li>
+                    <li class="bg-cardBg p-7 rounded-3xl border border-[#EADAC9] shadow-warm">
+                        <span class="font-serif text-5xl font-bold text-[#8A6420]">3</span>
+                        <h3 class="mt-3 text-2xl font-serif font-bold text-textDark" data-de="Lernplan" data-en="Learning plan">Lernplan</h3>
+                        <p class="mt-2 text-sm text-textDark/80 leading-relaxed" data-de="Ziele und Inhalte aus Ihrem Arbeitsalltag. Für Unternehmen gern zuerst mit einer Pilotgruppe, bevor es breiter losgeht." data-en="Goals and content from your working day. For companies, ideally starting with a pilot group before rolling out more widely.">Ziele und Inhalte aus Ihrem Arbeitsalltag. Für Unternehmen gern zuerst mit einer Pilotgruppe, bevor es breiter losgeht.</p>
+                    </li>
+                    <li class="bg-cardBg p-7 rounded-3xl border border-[#EADAC9] shadow-warm">
+                        <span class="font-serif text-5xl font-bold text-terracotta">4</span>
+                        <h3 class="mt-3 text-2xl font-serif font-bold text-textDark" data-de="Training & Übung" data-en="Training & practice">Training & Übung</h3>
+                        <p class="mt-2 text-sm text-textDark/80 leading-relaxed" data-de="Live-Training vor Ort, online oder hybrid – und auf Wunsch Found Fluency AI zum Üben zwischen den Stunden." data-en="Live training on site, online or hybrid – and, if you like, Found Fluency AI for practice between lessons.">Live-Training vor Ort, online oder hybrid – und auf Wunsch Found Fluency AI zum Üben zwischen den Stunden.</p>
+                    </li>
+                    <li class="bg-nightBlue p-7 rounded-3xl border border-nightBlue shadow-warm text-white">
+                        <span class="font-serif text-5xl font-bold text-softGold">5</span>
+                        <h3 class="mt-3 text-2xl font-serif font-bold" data-de="Fortschritt sichtbar" data-en="Visible progress">Fortschritt sichtbar</h3>
+                        <p class="mt-2 text-sm text-white/85 leading-relaxed" data-de="Praktische Nachweise statt Noten: Präsentation, Meeting-Simulation, Kundengespräch – mit Check-ins und einer ehrlichen Auswertung." data-en="Practical proof instead of grades: a presentation, a meeting simulation, a customer conversation – with check-ins and an honest review.">Praktische Nachweise statt Noten: Präsentation, Meeting-Simulation, Kundengespräch – mit Check-ins und einer ehrlichen Auswertung.</p>
+                    </li>
+                </ol>
+
+                <p class="mt-10 text-center text-sm text-textDark/80 max-w-3xl mx-auto" data-de="Für Unternehmen: Pilot, Auswertung und Ausweitung Schritt für Schritt – mit Rücksicht auf Datenschutz und Betriebsrat." data-en="For companies: pilot, review and roll-out step by step – with data protection and the works council in mind.">Für Unternehmen: Pilot, Auswertung und Ausweitung Schritt für Schritt – mit Rücksicht auf Datenschutz und Betriebsrat.</p>
+            </div>
+        </section>
+
+        <!-- 4. THREE OFFERS -->
+        <section id="offers" class="py-24 bg-cardBg border-t border-[#EADAC9]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Training & App" data-en="Training & app">Training & App</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Drei Wege zu mehr Sicherheit" data-en="Three ways to more confidence">Drei Wege zu mehr Sicherheit</h2>
+                    <p class="text-textDark/75 text-base sm:text-lg" data-de="Flexibel nach Ihrem Kalender und Ihrer Teamgröße." data-en="Flexible to fit your calendar and team size.">Flexibel nach Ihrem Kalender und Ihrer Teamgröße.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-cream/50 rounded-3xl p-8 border border-[#EADAC9] shadow-warm flex flex-col justify-between relative">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-video mb-6 border border-[#EADAC9]">
+                                <img src="img/trainer-whiteboard.webp" width="1024" height="689" loading="lazy" alt="Trainer am Whiteboard mit einer Gruppe" class="w-full h-full object-cover">
+                                <div class="absolute bottom-2 right-2 bg-textDark/75 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
+                            </div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold mb-3" data-de="Vor Ort, online oder hybrid" data-en="On site, online or hybrid">Vor Ort, online oder hybrid</span>
+                            <h3 class="text-3xl font-serif font-bold text-textDark mb-3">Found Fluency</h3>
+                            <p class="text-sm text-textDark/80 leading-relaxed mb-6" data-de="Live-Training für Gruppen und Einzelne – Englisch und Deutsch, an Ihren echten Situationen statt am Lehrbuch." data-en="Live training for groups and individuals – English and German, with your real situations instead of a textbook.">Live-Training für Gruppen und Einzelne – Englisch und Deutsch, an Ihren echten Situationen statt am Lehrbuch.</p>
+                            <ul class="space-y-2.5 text-sm text-textDark/85 mb-8 font-medium">
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta"></i><span data-de="Englische Muttersprachler" data-en="Native English speakers">Englische Muttersprachler</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta"></i><span data-de="Bei Ihnen vor Ort oder online" data-en="At your company or online">Bei Ihnen vor Ort oder online</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta"></i><span data-de="Inhalte aus Ihrer Branche" data-en="Content from your industry">Inhalte aus Ihrer Branche</span></li>
                             </ul>
                         </div>
-                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-xl border border-terracotta text-terracotta font-semibold text-xs hover:bg-terracotta hover:text-white transition-all">
-                            <span data-de="Mehr erfahren" data-en="Learn More">Mehr erfahren</span>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-xl border border-terracotta text-terracotta font-semibold text-sm hover:bg-terracotta hover:text-white transition-all">
+                            <span data-de="Erstgespräch vereinbaren" data-en="Book a first call">Erstgespräch vereinbaren</span>
                         </a>
                     </div>
 
-                    <!-- Offer 2: Found Fluency AI (Featured) -->
                     <div class="bg-nightBlue rounded-3xl p-8 border border-nightBlue text-white shadow-2xl flex flex-col justify-between relative transform lg:-translate-y-3">
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-softGold text-nightBlue px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-softGold text-nightBlue px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow whitespace-nowrap">
                             <span data-de="Neu · im Pilotbetrieb" data-en="New · in pilot">Neu · im Pilotbetrieb</span>
                         </div>
                         <div>
@@ -338,593 +304,341 @@
                             </div>
                             <span class="inline-block px-3 py-1 rounded-full bg-softGold/20 text-softGold text-xs font-bold mb-3" data-de="Sprech-App zwischen den Stunden" data-en="Speaking app between lessons">Sprech-App zwischen den Stunden</span>
                             <h3 class="text-3xl font-serif font-bold text-white mb-3">Found Fluency AI</h3>
-                            <p class="text-sm text-white/80 leading-relaxed font-light mb-6"
-                               data-de="Ihr Gesprächspartner fürs Handy: einfach aufs Mikrofon tippen und reden. Nach jedem Gespräch: Sprechzeit, Wörter pro Minute, was gut lief – und bis zu drei Dinge zum Üben."
-                               data-en="Your conversation partner on your phone: tap the microphone and talk. After every talk: speaking time, words per minute, what went well – and up to three things to practise.">
-                                Ihr Gesprächspartner fürs Handy: einfach aufs Mikrofon tippen und reden. Nach jedem Gespräch: Sprechzeit, Wörter pro Minute, was gut lief – und bis zu drei Dinge zum Üben.
-                            </p>
-                            <ul class="space-y-2.5 text-xs text-white/90 mb-8 font-medium">
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-softGold"></i>
-                                    <span data-de="Aktiv sprechen jederzeit und überall" data-en="Practice speaking anytime, anywhere">Aktiv sprechen jederzeit und überall</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-softGold"></i>
-                                    <span data-de="Neugieriges Feedback statt Rotstift" data-en="Curious feedback instead of red ink">Neugieriges Feedback statt Rotstift</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-softGold"></i>
-                                    <span data-de="Perfekte Ergänzung zum Live-Training" data-en="Perfect addition to live sessions">Perfekte Ergänzung zum Live-Training</span>
-                                </li>
+                            <p class="text-sm text-white/85 leading-relaxed mb-6" data-de="Ihr Gesprächspartner fürs Handy: aufs Mikrofon tippen und reden. Nach jedem Gespräch sehen Sie Sprechzeit, was gut lief und bis zu drei Dinge zum Üben." data-en="Your conversation partner on your phone: tap the microphone and talk. After every talk you see your speaking time, what went well and up to three things to practise.">Ihr Gesprächspartner fürs Handy: aufs Mikrofon tippen und reden. Nach jedem Gespräch sehen Sie Sprechzeit, was gut lief und bis zu drei Dinge zum Üben.</p>
+                            <ul class="space-y-2.5 text-sm text-white/90 mb-8 font-medium">
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-softGold"></i><span data-de="Üben ohne Publikum" data-en="Practise without an audience">Üben ohne Publikum</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-softGold"></i><span data-de="Neugieriges Feedback statt Rotstift" data-en="Curious feedback instead of red ink">Neugieriges Feedback statt Rotstift</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-softGold"></i><span data-de="Verknüpft mit dem Live-Training" data-en="Linked to your live training">Verknüpft mit dem Live-Training</span></li>
                             </ul>
                         </div>
-                        <a href="#ai-demo" class="w-full text-center py-3 rounded-xl bg-terracotta text-white font-semibold text-xs hover:bg-terracottaHover transition-all shadow-md">
-                            <span data-de="Beispiel ansehen" data-en="See an example">Beispiel ansehen</span>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-xl bg-terracotta text-white font-semibold text-sm hover:bg-terracottaHover transition-all shadow-md">
+                            <span data-de="Pilot anfragen" data-en="Ask about the pilot">Pilot anfragen</span>
                         </a>
                     </div>
 
-                    <!-- Offer 3: Found Fluency Executive -->
-                    <div class="bg-cardBg rounded-3xl p-8 border border-[#EADAC9] shadow-warm flex flex-col justify-between relative">
+                    <div class="bg-cream/50 rounded-3xl p-8 border border-[#EADAC9] shadow-warm flex flex-col justify-between relative">
                         <div>
-                            <div class="relative rounded-2xl overflow-hidden aspect-video mb-6">
-                                <img src="img/trainer-whiteboard.webp" width="1024" height="689" loading="lazy" alt="Trainer am Whiteboard mit Führungskräften" class="w-full h-full object-cover">
-                                <div class="absolute bottom-2 right-2 bg-textDark/75 text-white text-[9px] px-2 py-0.5 rounded">Symbolbild, KI-generiert</div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-video mb-6 border border-[#EADAC9]">
+                                <img src="img/daniel.webp" width="1024" height="693" loading="lazy" alt="Daniel Lambert" class="w-full h-full object-cover object-[35%_30%]">
+                                <div class="absolute bottom-2 right-2 bg-textDark/75 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
                             </div>
-                            <span class="inline-block px-3 py-1 rounded-full bg-tealSec/10 text-tealSec text-xs font-bold mb-3" data-de="Exklusives 1:1 Premium Coaching" data-en="Exclusive 1:1 Premium Coaching">Exklusives 1:1 Premium Coaching</span>
+                            <span class="inline-block px-3 py-1 rounded-full bg-tealSec/10 text-tealSec text-xs font-bold mb-3" data-de="1:1 für Führungskräfte" data-en="1:1 for leaders">1:1 für Führungskräfte</span>
                             <h3 class="text-3xl font-serif font-bold text-textDark mb-3">Found Fluency Executive</h3>
-                            <p class="text-sm text-textDark/75 leading-relaxed font-light mb-6"
-                               data-de="Höchste Diskretion & Intensität für C-Level & Führungskräfte. Gezieltes Sparring für wichtige Verhandlungen, Keynotes & Board Meetings."
-                               data-en="High-discretion 1:1 coaching for executives and senior leaders. Strategic preparation for negotiations, keynotes & board meetings.">
-                                Höchste Diskretion & Intensität für C-Level & Führungskräfte. Gezieltes Sparring für wichtige Verhandlungen, Keynotes & Board Meetings.
-                            </p>
-                            <ul class="space-y-2.5 text-xs text-textDark/80 mb-8 font-medium">
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-tealSec"></i>
-                                    <span data-de="100% Individuelle Agenda" data-en="100% personalized curriculum">100% Individuelle Agenda</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-tealSec"></i>
-                                    <span data-de="Direkter Draht zu Daniel Lambert" data-en="Direct line to Daniel Lambert">Direkter Draht zu Daniel Lambert</span>
-                                </li>
-                                <li class="flex items-center gap-2.5">
-                                    <i class="fa-solid fa-check text-tealSec"></i>
-                                    <span data-de="Prioritäre Terminvergabe" data-en="Priority scheduling">Prioritäre Terminvergabe</span>
-                                </li>
+                            <p class="text-sm text-textDark/80 leading-relaxed mb-6" data-de="Diskretes Sparring für Geschäftsführung und Vorstand: Verhandlungen, Keynotes, Board-Meetings und Interviews." data-en="Discreet sparring for managing directors and board members: negotiations, keynotes, board meetings and interviews.">Diskretes Sparring für Geschäftsführung und Vorstand: Verhandlungen, Keynotes, Board-Meetings und Interviews.</p>
+                            <ul class="space-y-2.5 text-sm text-textDark/85 mb-8 font-medium">
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-tealSec"></i><span data-de="Direkt mit Daniel Lambert" data-en="Directly with Daniel Lambert">Direkt mit Daniel Lambert</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-tealSec"></i><span data-de="Agenda nach Ihrem Kalender" data-en="An agenda that fits your calendar">Agenda nach Ihrem Kalender</span></li>
+                                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-tealSec"></i><span data-de="Absolut vertraulich" data-en="Strictly confidential">Absolut vertraulich</span></li>
                             </ul>
                         </div>
-                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-xl border border-tealSec text-tealSec font-semibold text-xs hover:bg-tealSec hover:text-white transition-all">
-                            <span data-de="Executive Erstgespräch" data-en="Executive Consultation">Executive Erstgespräch</span>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-xl border border-tealSec text-tealSec font-semibold text-sm hover:bg-tealSec hover:text-white transition-all">
+                            <span data-de="Executive-Erstgespräch" data-en="Executive first call">Executive-Erstgespräch</span>
                         </a>
                     </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 4. INTERACTIVE AI VOICE SIMULATOR WIDGET -->
-        <section id="ai-demo" class="py-20 bg-nightBlue text-white border-y border-white/10 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid lg:grid-cols-12 gap-12 items-center">
-                    
-                    <div class="lg:col-span-5 space-y-6">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-softGold/20 border border-softGold/30 text-xs font-semibold text-softGold">
-                            <i class="fa-solid fa-robot"></i>
-                            <span data-de="Found Fluency AI Feature" data-en="Found Fluency AI Feature">Found Fluency AI Feature</span>
-                        </div>
-                        <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight"
-                            data-de="Üben ohne Hemmungen. Rund um die Uhr."
-                            data-en="Practice without pressure. 24 hours a day.">
-                            Üben ohne Hemmungen. Rund um die Uhr.
-                        </h2>
-                        <p class="text-white/70 font-light text-base leading-relaxed"
-                           data-de="Ein Beispiel, wie sich das Feedback anfühlt: Die App sagt nie „falsch“ – sie fragt nach, Sie probieren es noch einmal, dann kommt ein Vorschlag. Wie ein geduldiger Freund in der Hosentasche."
-                           data-en="An example of how the feedback feels: the app never says “wrong” – it asks, you try again, then it suggests one way to say it. Like a patient friend in your pocket.">
-                            Ein Beispiel, wie sich das Feedback anfühlt: Die App sagt nie „falsch“ – sie fragt nach, Sie probieren es noch einmal, dann kommt ein Vorschlag. Wie ein geduldiger Freund in der Hosentasche.
-                        </p>
-                    </div>
-
-                    <!-- Simulator Interface -->
-                    <div class="lg:col-span-7">
-                        <div class="bg-[#242C3A] rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative">
-                            
-                            <!-- Header Widget -->
-                            <div class="flex items-center justify-between pb-6 border-b border-white/10">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-terracotta flex items-center justify-center text-white shadow-orb">
-                                        <i class="fa-solid fa-microphone text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-sm" data-de="Fluency AI Coach" data-en="Fluency AI Coach">Fluency AI Coach</h4>
-                                        <p class="text-[11px] text-white/60" data-de="Beispiel-Gespräch" data-en="Example conversation">Beispiel-Gespräch</p>
-                                    </div>
-                                </div>
-                                <!-- Wave visualizer -->
-                                <div class="flex items-center gap-1 h-6">
-                                    <span class="w-1 bg-terracotta rounded-full wave-bar"></span>
-                                    <span class="w-1 bg-softGold rounded-full wave-bar"></span>
-                                    <span class="w-1 bg-tealSec rounded-full wave-bar"></span>
-                                    <span class="w-1 bg-terracotta rounded-full wave-bar"></span>
-                                    <span class="w-1 bg-softGold rounded-full wave-bar"></span>
-                                </div>
-                            </div>
-
-                            <!-- Conversation Screen -->
-                            <div class="py-6 space-y-4 text-xs sm:text-sm">
-                                <!-- AI Bubble -->
-                                <div class="flex gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-terracotta/20 flex-shrink-0 flex items-center justify-center text-terracotta font-serif font-bold text-xs">AI</div>
-                                    <div class="bg-white/10 rounded-2xl rounded-tl-none p-4 max-w-[85%] border border-white/5">
-                                        <p class="text-white/90" data-de="„Hello! How was your management meeting in Stuttgart today?“" data-en="“Hello! How was your management meeting in Stuttgart today?”">„Hello! How was your management meeting in Stuttgart today?“</p>
-                                    </div>
-                                </div>
-
-                                <!-- User Interactive Sample Selector -->
-                                <div class="space-y-2 pt-2">
-                                    <p class="text-xs text-softGold font-medium" data-de="Wählen Sie eine Antwort aus, um Feedback zu sehen:" data-en="Select an answer to simulate real-time AI feedback:">Wählen Sie eine Antwort aus, um Feedback zu sehen:</p>
-                                    
-                                    <div class="grid gap-2">
-                                        <button onclick="selectAiOption(1)" class="ai-opt-btn w-full text-left p-3 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all font-light text-xs flex justify-between items-center group">
-                                            <span>Option A: "The meeting was good, but I was nervous to make mistakes."</span>
-                                            <i class="fa-solid fa-chevron-right text-xs text-white/40 group-hover:text-softGold"></i>
-                                        </button>
-                                        <button onclick="selectAiOption(2)" class="ai-opt-btn w-full text-left p-3 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all font-light text-xs flex justify-between items-center group">
-                                            <span>Option B: "I explained the budget, but I missed the right word for standard."</span>
-                                            <i class="fa-solid fa-chevron-right text-xs text-white/40 group-hover:text-softGold"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- Dynamic AI Response Box -->
-                                <div id="aiFeedbackBox" class="mt-4 p-4 rounded-2xl bg-tealSec/20 border border-tealSec/40 hidden">
-                                    <div class="flex items-start gap-2 text-tealSec font-semibold text-xs mb-1">
-                                        <i class="fa-solid fa-lightbulb mt-0.5"></i>
-                                        <span id="aiFeedbackTitle" data-de="Fluency Tipp & Ermutigung:" data-en="Fluency Tip & Encouragement:">Fluency Tipp & Ermutigung:</span>
-                                    </div>
-                                    <p id="aiFeedbackText" class="text-xs text-white/90 leading-relaxed font-light">
-                                        <!-- Dynamic text inserted via JS -->
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- 5. WHAT WE HEAR MOST OFTEN (TESTIMONIALS) -->
-        <section class="py-24 bg-cardBg border-b border-[#EADAC9]">
+        <!-- 5. REFERENCES – Daniel's own summary of what learners say (no invented names) -->
+        <section class="py-24 bg-cream border-b border-[#EADAC9]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
                 <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
                     <span class="text-xs font-bold uppercase tracking-widest text-tealSec" data-de="Referenzen" data-en="References">Referenzen</span>
-                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="„Was, schon vorbei?“" data-en="“Wait, already over?”">„Was, schon vorbei?“</h2>
-                    <p class="text-textDark/70 text-base" data-de="Das hören wir in unseren Einheiten am häufigsten." data-en="This is what we hear most often in our sessions.">Das hören wir in unseren Einheiten am häufigsten.</p>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="„Was, schon vorbei?“" data-en="“What, over already?”">„Was, schon vorbei?“</h2>
+                    <p class="text-textDark/75 text-base" data-de="Das hören wir am Ende einer Stunde am häufigsten – und das hier ebenso:" data-en="The line we hear most often at the end of a lesson – along with these:">Das hören wir am Ende einer Stunde am häufigsten – und das hier ebenso:</p>
                 </div>
-
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-clock"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Die Zeit vergeht wie im Flug" data-en="Time flies">Die Zeit vergeht wie im Flug</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Kaum angefangen, schon ist die Stunde um." data-en="The lesson is over before you know it.">Kaum angefangen, schon ist die Stunde um.</p>
-                    </div>
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-face-laugh-beam"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="So viel Spaß" data-en="So much fun">So viel Spaß</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Es wird viel gelacht – und genau dann bleibt etwas hängen." data-en="There's a lot of laughter – and that's exactly when things stick.">Es wird viel gelacht – und genau dann bleibt etwas hängen.</p>
-                    </div>
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-mug-hot"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Wie mit einem alten Freund" data-en="Like talking to an old friend">Wie mit einem alten Freund</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Entspannt und persönlich, ohne Angst vor Fehlern." data-en="Relaxed and personal, with no fear of mistakes.">Entspannt und persönlich, ohne Angst vor Fehlern.</p>
-                    </div>
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-handshake"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Professionell und trotzdem leicht" data-en="Professional, yet light">Professionell und trotzdem leicht</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Ernsthafte Arbeit an echten Situationen – in angenehmer Atmosphäre." data-en="Serious work on real situations – in a pleasant atmosphere.">Ernsthafte Arbeit an echten Situationen – in angenehmer Atmosphäre.</p>
-                    </div>
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-arrow-trend-up"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Spürbarer Fortschritt" data-en="Noticeable progress">Spürbarer Fortschritt</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Man merkt es im nächsten Meeting, Telefonat oder Gespräch." data-en="You notice it in the next meeting, call or conversation.">Man merkt es im nächsten Meeting, Telefonat oder Gespräch.</p>
-                    </div>
-                    <div class="bg-cream/60 p-8 rounded-3xl border border-[#EADAC9]">
-                        <div class="w-12 h-12 rounded-2xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-5"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark mb-2" data-de="Die beste Mischung" data-en="The best mix">Die beste Mischung</h3>
-                        <p class="text-sm text-textDark/75 leading-relaxed" data-de="Fortschritt und Spaß gehören zusammen." data-en="Progress and fun belong together.">Fortschritt und Spaß gehören zusammen.</p>
-                    </div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-clock text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Die Zeit vergeht wie im Flug" data-en="Time flies">Die Zeit vergeht wie im Flug</h3><p class="mt-2 text-sm text-textDark/80" data-de="Kaum angefangen, schon ist die Stunde um." data-en="The lesson is over before you know it.">Kaum angefangen, schon ist die Stunde um.</p></div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-face-laugh-beam text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="So viel Spaß" data-en="So much fun">So viel Spaß</h3><p class="mt-2 text-sm text-textDark/80" data-de="Es wird viel gelacht – und genau dann bleibt etwas hängen." data-en="There's a lot of laughter – and that's exactly when things stick.">Es wird viel gelacht – und genau dann bleibt etwas hängen.</p></div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-mug-hot text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Wie mit einem alten Freund" data-en="Like talking to an old friend">Wie mit einem alten Freund</h3><p class="mt-2 text-sm text-textDark/80" data-de="Entspannt und persönlich, ohne Angst vor Fehlern." data-en="Relaxed and personal, with no fear of mistakes.">Entspannt und persönlich, ohne Angst vor Fehlern.</p></div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-handshake text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Professionell und trotzdem leicht" data-en="Professional, yet light">Professionell und trotzdem leicht</h3><p class="mt-2 text-sm text-textDark/80" data-de="Ernsthafte Arbeit an echten Situationen – in angenehmer Atmosphäre." data-en="Serious work on real situations – in a pleasant atmosphere.">Ernsthafte Arbeit an echten Situationen – in angenehmer Atmosphäre.</p></div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-arrow-trend-up text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Spürbarer Fortschritt" data-en="Noticeable progress">Spürbarer Fortschritt</h3><p class="mt-2 text-sm text-textDark/80" data-de="Man merkt es im nächsten Meeting, Telefonat oder Gespräch." data-en="You notice it in the next meeting, call or conversation.">Man merkt es im nächsten Meeting, Telefonat oder Gespräch.</p></div>
+                    <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-wand-magic-sparkles text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Die beste Mischung" data-en="The best mix">Die beste Mischung</h3><p class="mt-2 text-sm text-textDark/80" data-de="Fortschritt und Spaß gehören zusammen." data-en="Progress and fun belong together.">Fortschritt und Spaß gehören zusammen.</p></div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 6. CORPORATE CLIENTS LOGO GRID -->
-        <section class="py-16 bg-cream border-b border-[#EADAC9]/60">
+        <!-- 6. CLIENTS -->
+        <section class="py-16 bg-cream border-b border-[#EADAC9]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p class="text-xs font-semibold uppercase tracking-widest text-textDark/60 mb-8" data-de="Vertraut von Teams & Fachkräften bei" data-en="Trusted by teams & professionals at">
-                    Vertraut von Teams & Fachkräften bei
-                </p>
-                <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-80 font-serif font-bold text-xl sm:text-2xl text-textDark/70">
-                    <span class="hover:text-terracotta transition-colors tracking-tight">BOSCH</span>
-                    <span class="text-sm">•</span>
-                    <span class="hover:text-terracotta transition-colors tracking-tight">KION Warehouse Systems</span>
-                    <span class="text-sm">•</span>
-                    <span class="hover:text-terracotta transition-colors tracking-tight">WAFIOS</span>
-                    <span class="text-sm">•</span>
-                    <span class="hover:text-terracotta transition-colors tracking-tight">BOTEK</span>
-                    <span class="text-sm">•</span>
-                    <span class="hover:text-terracotta transition-colors tracking-tight">Towers Watson</span>
-                    <span class="text-sm">•</span>
-                    <span class="hover:text-terracotta transition-colors tracking-tight">Uniplast</span>
+                <p class="text-xs font-semibold uppercase tracking-widest text-textDark/70 mb-8" data-de="Unternehmen, mit denen wir gearbeitet haben" data-en="Companies we have worked with">Unternehmen, mit denen wir gearbeitet haben</p>
+                <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-serif font-bold text-xl sm:text-2xl text-textDark/75">
+                    <span>Bosch</span><span class="text-sm text-terracotta">•</span>
+                    <span>KION Warehouse Systems</span><span class="text-sm text-terracotta">•</span>
+                    <span>WAFIOS</span><span class="text-sm text-terracotta">•</span>
+                    <span>Botek</span><span class="text-sm text-terracotta">•</span>
+                    <span>Towers Watson</span><span class="text-sm text-terracotta">•</span>
+                    <span>Uniplast</span>
                 </div>
             </div>
         </section>
 
-        <!-- 7. TEAM SECTION -->
+        <!-- 7. TEAM – real trainers only, with their consent -->
         <section id="team" class="py-24 bg-cardBg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Unser Team" data-en="Our Team">Unser Team</span>
-                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Muttersprachler. Meistens Kanadier." data-en="Native speakers. Mostly Canadians.">
-                        Muttersprachler. Meistens Kanadier.
-                    </h2>
-                    <p class="text-textDark/75 text-base sm:text-lg font-light" data-de="Bei Found Fluency unterrichten englische Muttersprachler – meistens Kanadier: entspannt, offen, tolerant und ehrlich, ohne unhöflich zu sein." data-en="Native English speakers teach at Found Fluency – mostly Canadians: relaxed, open, tolerant and honest without being rude.">
-                        Bei Found Fluency unterrichten englische Muttersprachler – meistens Kanadier: entspannt, offen, tolerant und ehrlich, ohne unhöflich zu sein.
-                    </p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Trainer-Team" data-en="Trainer team">Trainer-Team</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Muttersprachler. Meistens Kanadier." data-en="Native speakers. Mostly Canadians.">Muttersprachler. Meistens Kanadier.</h2>
+                    <p class="text-textDark/80 text-base sm:text-lg" data-de="Entspannt, offen, tolerant und ehrlich, ohne unhöflich zu sein. What you see is what you get." data-en="Relaxed, open, tolerant and honest without being rude. What you see is what you get.">Entspannt, offen, tolerant und ehrlich, ohne unhöflich zu sein. What you see is what you get.</p>
                 </div>
-
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    
-                    <!-- Team Member 1: Daniel -->
-                    <div class="bg-cream/40 rounded-3xl p-6 border border-[#EADAC9] text-center hover:shadow-warm transition-all group">
-                        <div class="relative w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-2 border-terracotta">
+                    <div class="bg-cream/40 rounded-3xl p-6 border border-[#EADAC9] text-center hover:shadow-warm transition-all">
+                        <div class="relative w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-2 border-terracotta shadow-md">
                             <img src="img/daniel.webp" width="1024" height="693" loading="lazy" alt="Daniel Lambert" class="w-full h-full object-cover object-[30%_35%]">
                         </div>
-                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-terracotta/10 text-terracotta text-[10px] font-bold mb-2">🇨🇦 / 🇩🇪 Gründer</div>
+                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-terracotta/10 text-terracotta text-[10px] font-bold mb-2" data-de="🇨🇦 Gründer" data-en="🇨🇦 Founder">🇨🇦 Gründer</div>
                         <h3 class="text-2xl font-serif font-bold text-textDark">Daniel Lambert</h3>
-                        <p class="text-xs text-tealSec font-medium mb-3" data-de="Head Trainer & KI-Manager" data-en="Head Trainer & AI Manager">Head Trainer & KI-Manager</p>
-                        <p class="text-xs text-textDark/75 leading-relaxed font-light"
-                           data-de="Aus Winnipeg & Lorette nach Reutlingen. 17 Jahre Erfahrung von der Werkshalle bis zur C-Suite."
-                           data-en="From Winnipeg & Lorette to Reutlingen. 17 years experience from shop floor to C-suite.">
-                            Aus Winnipeg & Lorette nach Reutlingen. 17 Jahre Erfahrung von der Werkshalle bis zur C-Suite.
-                        </p>
-                    </div>
-
-                    <div class="bg-cream/40 rounded-3xl p-6 border border-dashed border-[#D9C3B0] text-center">
-                        <div class="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-dashed border-[#D9C3B0] flex items-center justify-center text-4xl font-serif text-textDark/40">?</div>
-                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-tealSec/10 text-tealSec text-[10px] font-bold mb-2" data-de="Trainer:in" data-en="Trainer">Trainer:in</div>
-                        <h3 class="text-2xl font-serif font-bold text-textDark" data-de="Name folgt" data-en="Name to follow">Name folgt</h3>
-                        <p class="text-xs text-textDark/75 leading-relaxed" data-de="Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein." data-en="Native English speaker – relaxed, open and honest without being rude.">Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein.</p>
+                        <p class="text-xs text-tealSec font-semibold mb-3" data-de="Head Coach · KI-Manager (IHK)" data-en="Head coach · AI manager (IHK)">Head Coach · KI-Manager (IHK)</p>
+                        <p class="text-xs text-textDark/80 leading-relaxed" data-de="Von Lorette und Winnipeg nach Reutlingen. 17 Jahre vom Hallenboden bis in die Chefetage." data-en="From Lorette and Winnipeg to Reutlingen. 17 years from the shop floor to the boardroom.">Von Lorette und Winnipeg nach Reutlingen. 17 Jahre vom Hallenboden bis in die Chefetage.</p>
                     </div>
                     <div class="bg-cream/40 rounded-3xl p-6 border border-dashed border-[#D9C3B0] text-center">
                         <div class="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-dashed border-[#D9C3B0] flex items-center justify-center text-4xl font-serif text-textDark/40">?</div>
                         <div class="inline-block px-2.5 py-0.5 rounded-full bg-tealSec/10 text-tealSec text-[10px] font-bold mb-2" data-de="Trainer:in" data-en="Trainer">Trainer:in</div>
                         <h3 class="text-2xl font-serif font-bold text-textDark" data-de="Name folgt" data-en="Name to follow">Name folgt</h3>
-                        <p class="text-xs text-textDark/75 leading-relaxed" data-de="Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein." data-en="Native English speaker – relaxed, open and honest without being rude.">Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein.</p>
+                        <p class="text-xs text-textDark/80 leading-relaxed" data-de="Englische Muttersprachler:in im Found-Fluency-Team." data-en="Native English speaker on the Found Fluency team.">Englische Muttersprachler:in im Found-Fluency-Team.</p>
                     </div>
                     <div class="bg-cream/40 rounded-3xl p-6 border border-dashed border-[#D9C3B0] text-center">
                         <div class="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-dashed border-[#D9C3B0] flex items-center justify-center text-4xl font-serif text-textDark/40">?</div>
                         <div class="inline-block px-2.5 py-0.5 rounded-full bg-tealSec/10 text-tealSec text-[10px] font-bold mb-2" data-de="Trainer:in" data-en="Trainer">Trainer:in</div>
                         <h3 class="text-2xl font-serif font-bold text-textDark" data-de="Name folgt" data-en="Name to follow">Name folgt</h3>
-                        <p class="text-xs text-textDark/75 leading-relaxed" data-de="Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein." data-en="Native English speaker – relaxed, open and honest without being rude.">Englische Muttersprachler:in – entspannt, offen und ehrlich, ohne unhöflich zu sein.</p>
+                        <p class="text-xs text-textDark/80 leading-relaxed" data-de="Englische Muttersprachler:in im Found-Fluency-Team." data-en="Native English speaker on the Found Fluency team.">Englische Muttersprachler:in im Found-Fluency-Team.</p>
                     </div>
-
+                    <div class="bg-cream/40 rounded-3xl p-6 border border-dashed border-[#D9C3B0] text-center">
+                        <div class="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-dashed border-[#D9C3B0] flex items-center justify-center text-4xl font-serif text-textDark/40">?</div>
+                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-tealSec/10 text-tealSec text-[10px] font-bold mb-2" data-de="Trainer:in" data-en="Trainer">Trainer:in</div>
+                        <h3 class="text-2xl font-serif font-bold text-textDark" data-de="Name folgt" data-en="Name to follow">Name folgt</h3>
+                        <p class="text-xs text-textDark/80 leading-relaxed" data-de="Englische Muttersprachler:in im Found-Fluency-Team." data-en="Native English speaker on the Found Fluency team.">Englische Muttersprachler:in im Found-Fluency-Team.</p>
+                    </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 8. TRANSPARENT PRICING SECTION WITH CALCULATOR -->
+        <!-- 8. PRICING & CALCULATOR -->
         <section id="pricing" class="py-24 bg-cream border-t border-[#EADAC9]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
                 <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Transparente Konditionen" data-en="Transparent Pricing">Transparente Konditionen</span>
-                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Preise pro 45 Minuten" data-en="Pricing per 45 Minutes">Preise pro 45 Minuten</h2>
-                    <p class="text-textDark/70 text-base" data-de="Keine versteckten Vertragsklauseln. Einfach und fair." data-en="No hidden contract traps. Simple and fair.">Keine versteckten Vertragsklauseln. Einfach und fair.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta" data-de="Transparente Preise" data-en="Transparent pricing">Transparente Preise</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="Preise pro 45 Minuten" data-en="Prices per 45 minutes">Preise pro 45 Minuten</h2>
+                    <p class="text-textDark/75 text-base" data-de="Faire Konditionen ohne Kleingedrucktes." data-en="Fair terms, no small print.">Faire Konditionen ohne Kleingedrucktes.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    
-                    <!-- Pricing 1: Group -->
                     <div class="bg-cardBg rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-textDark mb-1" data-de="Gruppe (ab 2 Pers.)" data-en="Group (min. 2 people)">Gruppe (ab 2 Pers.)</h3>
-                            <p class="text-xs text-textDark/60 mb-4" data-de="Ideal für Firmen-Teams" data-en="Ideal for corporate teams">Ideal für Firmen-Teams</p>
-                            <div class="text-3xl font-bold font-serif text-terracotta mb-1">€ 65 <span class="text-xs font-sans text-textDark/60 font-normal">/ 45 min</span></div>
-                            <p class="text-[11px] text-textDark/60 mb-4" data-de="+ € 7,50 pro weiterer Person" data-en="+ € 7.50 per additional person">+ € 7,50 pro weiterer Person</p>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="Für Firmen-Teams" data-en="For company teams">Für Firmen-Teams</p>
+                            <div class="text-3xl font-bold font-serif text-terracotta mb-1">€ 65 <span class="text-xs font-sans text-textDark/70 font-normal">/ 45 min</span></div>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="+ € 7,50 pro weiterer Person" data-en="+ € 7.50 per additional person">+ € 7,50 pro weiterer Person</p>
                         </div>
-                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-terracotta text-terracotta hover:bg-terracotta hover:text-white transition-all text-xs font-semibold">
-                            <span data-de="Anfragen" data-en="Inquire Now">Anfragen</span>
-                        </a>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-terracotta text-terracotta hover:bg-terracotta hover:text-white transition-all text-xs font-semibold"><span data-de="Team-Anfrage" data-en="Team enquiry">Team-Anfrage</span></a>
                     </div>
-
-                    <!-- Pricing 2: 1:1 -->
                     <div class="bg-cardBg rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-serif font-bold text-textDark mb-1" data-de="1:1 Einzeltraining" data-en="1:1 Individual">1:1 Einzeltraining</h3>
-                            <p class="text-xs text-textDark/60 mb-4" data-de="Fokus auf Ihre Themen" data-en="Focus on your needs">Fokus auf Ihre Themen</p>
-                            <div class="text-3xl font-bold font-serif text-tealSec mb-1">€ 60 <span class="text-xs font-sans text-textDark/60 font-normal">/ 45 min</span></div>
-                            <p class="text-[11px] text-textDark/60 mb-4" data-de="Maximaler Redefluss" data-en="Maximum talking time">Maximaler Redefluss</p>
+                            <h3 class="text-xl font-serif font-bold text-textDark mb-1" data-de="1:1 Einzeltraining" data-en="1:1 training">1:1 Einzeltraining</h3>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="Für gezielten Fokus" data-en="For focused work">Für gezielten Fokus</p>
+                            <div class="text-3xl font-bold font-serif text-tealSec mb-1">€ 60 <span class="text-xs font-sans text-textDark/70 font-normal">/ 45 min</span></div>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="Maximale Sprechzeit" data-en="Maximum speaking time">Maximale Sprechzeit</p>
                         </div>
-                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-tealSec text-tealSec hover:bg-tealSec hover:text-white transition-all text-xs font-semibold">
-                            <span data-de="Anfragen" data-en="Inquire Now">Anfragen</span>
-                        </a>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-tealSec text-tealSec hover:bg-tealSec hover:text-white transition-all text-xs font-semibold"><span data-de="Einzel-Anfrage" data-en="1:1 enquiry">Einzel-Anfrage</span></a>
                     </div>
-
-                    <!-- Pricing 3: Executive -->
                     <div class="bg-cardBg rounded-3xl p-6 border border-[#EADAC9] shadow-warm flex flex-col justify-between">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-textDark mb-1" data-de="Executive 1:1" data-en="Executive 1:1">Executive 1:1</h3>
-                            <p class="text-xs text-textDark/60 mb-4" data-de="Für Führungskräfte" data-en="For C-Suite & Leaders">Für Führungskräfte</p>
-                            <div class="text-3xl font-bold font-serif text-[#8A6420] mb-1">€ 70 <span class="text-xs font-sans text-textDark/60 font-normal">/ 45 min</span></div>
-                            <p class="text-[11px] text-textDark/60 mb-4" data-de="Priorität & Sparring" data-en="Priority & Leadership Sparring">Priorität & Sparring</p>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="Für Führungskräfte" data-en="For leaders">Für Führungskräfte</p>
+                            <div class="text-3xl font-bold font-serif text-[#8A6420] mb-1">€ 70 <span class="text-xs font-sans text-textDark/70 font-normal">/ 45 min</span></div>
+                            <p class="text-xs text-textDark/70 mb-4" data-de="Mit Daniel Lambert" data-en="With Daniel Lambert">Mit Daniel Lambert</p>
                         </div>
-                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-[#8A6420] text-[#8A6420] hover:bg-[#8A6420] hover:text-white transition-all text-xs font-semibold">
-                            <span data-de="Anfragen" data-en="Inquire Now">Anfragen</span>
-                        </a>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl border border-[#8A6420] text-[#8A6420] hover:bg-[#8A6420] hover:text-white transition-all text-xs font-semibold"><span data-de="Executive-Anfrage" data-en="Executive enquiry">Executive-Anfrage</span></a>
                     </div>
-
-                    <!-- Pricing 4: AI App -->
                     <div class="bg-nightBlue rounded-3xl p-6 text-white shadow-warm flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-serif font-bold text-white mb-1" data-de="Found Fluency AI" data-en="Found Fluency AI">Found Fluency AI</h3>
-                            <p class="text-xs text-white/60 mb-4" data-de="Nur zusammen mit Live-Training" data-en="Only together with live training">Nur zusammen mit Live-Training</p>
+                            <h3 class="text-xl font-serif font-bold text-white mb-1">Found Fluency AI</h3>
+                            <p class="text-xs text-white/70 mb-4" data-de="Nur zusammen mit Live-Training" data-en="Only together with live training">Nur zusammen mit Live-Training</p>
                             <div class="text-3xl font-bold font-serif text-softGold mb-1"><span class="text-sm font-sans font-normal" data-de="ab" data-en="from">ab</span> € 30</div>
-                            <p class="text-[11px] text-white/60 mb-4" data-de="pro Lerner / Monat" data-en="per learner / month">pro Lerner / Monat</p>
+                            <p class="text-xs text-white/70 mb-4" data-de="pro Person und Monat" data-en="per learner per month">pro Person und Monat</p>
                         </div>
-                        <a href="#ai-demo" class="w-full text-center py-2.5 rounded-xl bg-terracotta text-white hover:bg-terracottaHover transition-all text-xs font-semibold">
-                            <span data-de="Beispiel ansehen" data-en="See an example">Beispiel ansehen</span>
-                        </a>
+                        <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="w-full text-center py-2.5 rounded-xl bg-terracotta text-white hover:bg-terracottaHover transition-all text-xs font-semibold"><span data-de="Pilot anfragen" data-en="Ask about the pilot">Pilot anfragen</span></a>
                     </div>
-
                 </div>
 
-                <!-- Interactive Group Calculator Widget -->
                 <div class="max-w-2xl mx-auto bg-cardBg rounded-3xl p-6 sm:p-8 border border-[#EADAC9] shadow-warm">
-                    <h4 class="font-serif font-bold text-2xl text-textDark mb-2 text-center" data-de="Interaktiver Gruppenpreis-Rechner" data-en="Interactive Group Price Calculator">Interaktiver Gruppenpreis-Rechner</h4>
-                    <p class="text-xs text-textDark/70 text-center mb-6" data-de="Berechnen Sie den Preis pro 45 min Einheit für Ihre Teamgröße" data-en="Calculate price per 45 min session for your team size">Berechnen Sie den Preis pro 45 min Einheit für Ihre Teamgröße</p>
-                    
+                    <h4 class="font-serif font-bold text-2xl text-textDark mb-2 text-center" data-de="Gruppenpreis-Rechner" data-en="Group price calculator">Gruppenpreis-Rechner</h4>
+                    <p class="text-xs text-textDark/75 text-center mb-6" data-de="Preis pro 45-Minuten-Einheit für Ihre Teamgröße" data-en="Price per 45-minute session for your team size">Preis pro 45-Minuten-Einheit für Ihre Teamgröße</p>
                     <div class="space-y-6">
                         <div>
                             <div class="flex justify-between text-xs font-semibold text-textDark mb-2">
-                                <span data-de="Anzahl Personen im Team:" data-en="Number of people in team:">Anzahl Personen im Team:</span>
-                                <span id="calcPeopleCount" class="text-terracotta text-sm">2 Personen</span>
+                                <label for="groupSlider" data-de="Anzahl Personen im Team:" data-en="Number of people in the team:">Anzahl Personen im Team:</label>
+                                <span id="calcPeopleCount" class="text-terracotta font-bold text-sm">2 Personen</span>
                             </div>
                             <input type="range" id="groupSlider" min="2" max="10" value="2" oninput="updateCalculator()" class="w-full accent-terracotta cursor-pointer">
                         </div>
-
                         <div class="p-4 rounded-2xl bg-cream border border-[#EADAC9] flex items-center justify-between">
                             <div>
-                                <span class="text-xs text-textDark/60 block" data-de="Gesamtpreis pro 45 min:" data-en="Total price per 45 min:">Gesamtpreis pro 45 min:</span>
+                                <span class="text-xs text-textDark/70 block" data-de="Gesamtpreis pro 45 Min.:" data-en="Total per 45 min:">Gesamtpreis pro 45 Min.:</span>
                                 <span id="calcTotalPrice" class="text-2xl font-serif font-bold text-terracotta">€ 65,00</span>
                             </div>
                             <div class="text-right">
-                                <span class="text-xs text-textDark/60 block" data-de="Pro Person:" data-en="Per person:">Pro Person:</span>
+                                <span class="text-xs text-textDark/70 block" data-de="Pro Person:" data-en="Per person:">Pro Person:</span>
                                 <span id="calcPerPersonPrice" class="text-lg font-serif font-bold text-tealSec">€ 32,50</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 9. ABOUT DANIEL LAMBERT STORY SECTION -->
-        <section id="about-daniel" class="py-24 bg-cardBg border-t border-[#EADAC9]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-12 gap-12 items-center">
-                    
-                    <!-- Daniel Photo Grid -->
-                    <div class="lg:col-span-5 relative">
-                        <div class="relative rounded-3xl overflow-hidden border border-[#EADAC9] shadow-warm">
-                            <img src="img/daniel.webp" width="1024" height="693" loading="lazy" alt="Daniel Lambert in einem Trainingsraum" class="w-full h-auto object-cover">
-                            <div class="absolute top-3 left-3 bg-textDark/75 text-white text-[9px] px-2 py-0.5 rounded">Symbolbild, KI-generiert</div>
+        <!-- 9. ABOUT DANIEL – library background -->
+        <section id="about-daniel" class="py-24 scenic-oxford-bg text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+                    <div class="lg:col-span-5 relative lg:sticky lg:top-28">
+                        <div class="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
+                            <img src="img/daniel.webp" width="1024" height="693" loading="lazy" alt="Daniel Lambert" class="w-full aspect-[4/5] object-cover object-[32%_center]">
+                            <div class="absolute bottom-2 right-2 bg-textDark/85 text-white text-[9px] px-2 py-0.5 rounded font-mono">Symbolbild, KI-generiert</div>
                         </div>
-                        <div class="absolute -bottom-6 -right-6 bg-cream p-5 rounded-2xl border border-[#EADAC9] shadow-md hidden sm:block max-w-xs">
-                            <p class="font-serif italic text-xs text-textDark" data-de="„Sprache baut Brücken zwischen Menschen, Werkshallen und Vorstandsetagen.“" data-en="“Language builds bridges between people, shop floors, and boardrooms.”">
-                                „Sprache baut Brücken zwischen Menschen, Werkshallen und Vorstandsetagen.“
-                            </p>
+                        <div class="absolute -bottom-6 -right-6 glass-card-dark p-5 rounded-2xl border border-softGold/30 shadow-2xl hidden sm:block max-w-xs">
+                            <p class="font-serif italic text-lg text-softGold" data-de="„Ehrlich, ohne unhöflich zu sein.“" data-en="“Honest, without being rude.”">„Ehrlich, ohne unhöflich zu sein.“</p>
                         </div>
                     </div>
 
-                    <!-- Daniel Story Text -->
-                    <div class="lg:col-span-7 space-y-6">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-terracotta/10 text-xs font-semibold text-terracotta">
-                            <span data-de="Gründer & Trainer Story" data-en="Founder & Trainer Story">Gründer & Trainer Story</span>
+                    <div class="lg:col-span-7 glass-card-dark p-8 sm:p-10 rounded-3xl border border-white/15 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-terracotta/20 text-xs font-semibold text-softGold border border-softGold/30">
+                            <span data-de="Gründer & Head Coach" data-en="Founder & head coach">Gründer & Head Coach</span>
                         </div>
 
-                        <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark leading-tight">
-                            <span data-de="Von Winnipeg nach Reutlingen." data-en="From Winnipeg to Reutlingen.">Von Winnipeg nach Reutlingen.</span><br>
-                            <span class="italic text-tealSec font-normal" data-de="17 Jahre Erfahrung, die verbinden." data-en="17 years of bringing people together.">17 Jahre Erfahrung, die verbinden.</span>
+                        <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white leading-tight">
+                            <span data-de="Von Lorette in die Chefetage." data-en="From Lorette to the boardroom.">Von Lorette in die Chefetage.</span><br>
+                            <span class="italic text-softGold font-normal" data-de="Ein Leben zwischen den Sprachen." data-en="A life between languages.">Ein Leben zwischen den Sprachen.</span>
                         </h2>
 
-                        <div class="text-sm sm:text-base text-textDark/80 font-light leading-relaxed space-y-4">
-                            <p data-de="Hallo! Ich bin Daniel Lambert. Mein Weg war alles andere als ein geradliniger akademischer Elfenbeinturm. Aufgewachsen in Winnipeg & Lorette (Kanada), habe ich als Barkeeper, Hafenarbeiter und Landschaftsgärtner gearbeitet. Ich kenne die Sprache des echten Lebens."
-                               data-en="Hi! I'm Daniel Lambert. My path was anything but a straight academic ivory tower. Growing up in Winnipeg & Lorette (Canada), I worked as a bartender, dock worker, and landscaper. I know the language of real life.">
-                                Hallo! Ich bin Daniel Lambert. Mein Weg war alles andere als ein geradliniger akademischer Elfenbeinturm. Aufgewachsen in Winnipeg & Lorette (Kanada), habe ich als Barkeeper, Hafenarbeiter und Landschaftsgärtner gearbeitet. Ich kenne die Sprache des echten Lebens.
+                        <div class="text-base text-white/90 leading-relaxed space-y-4">
+                            <p data-de="Aufgewachsen bin ich zweisprachig – mit Französisch und Englisch – im kleinen Dorf Lorette und in Winnipeg, Manitoba. Angefangen habe ich im Ingenieurwesen. Dann hat mich die Sprache gepackt: Über Trier und Mulhouse im Elsass kam ich nach Deutschland, habe Linguistik studiert und lebe seit 2009 bei Reutlingen."
+                               data-en="I grew up bilingual – with French and English – in the small village of Lorette and in Winnipeg, Manitoba. I started out in engineering. Then languages got hold of me: via Trier and Mulhouse in Alsace I came to Germany, studied linguistics and have lived near Reutlingen since 2009.">
+                                Aufgewachsen bin ich zweisprachig – mit Französisch und Englisch – im kleinen Dorf Lorette und in Winnipeg, Manitoba. Angefangen habe ich im Ingenieurwesen. Dann hat mich die Sprache gepackt: Über Trier und Mulhouse im Elsass kam ich nach Deutschland, habe Linguistik studiert und lebe seit 2009 bei Reutlingen.
                             </p>
-
-                            <p data-de="Seit 2009 lebe ich bei Reutlingen und begleite seit 17 Jahren Fachkräfte, Meister, Werksleiter und Vorstände – und Studierende der ESB Business School. Ob Werkshalle oder C-Suite: Ich verstehe die sprachlichen Herausforderungen beider Welten. Die häufigste Reaktion nach 90 Minuten: „Was, schon vorbei?“"
-                               data-en="I have lived near Reutlingen since 2009 and for 17 years have coached skilled workers, master craftsmen, plant managers and executives – and students at ESB Business School. From the shop floor to the boardroom: I understand both worlds. The most common reaction after 90 minutes: “What, over already?”">
-                                Seit 2009 lebe ich bei Reutlingen und begleite seit 17 Jahren Fachkräfte, Meister, Werksleiter und Vorstände – und Studierende der ESB Business School. Ob Werkshalle oder C-Suite: Ich verstehe die sprachlichen Herausforderungen beider Welten. Die häufigste Reaktion nach 90 Minuten: „Was, schon vorbei?“
+                            <p data-de="Bevor ich unterrichtet habe, stand ich hinter der Bar, habe im Hafen gearbeitet und in Kanada einen Garten- und Landschaftsbaubetrieb geleitet. Die Bar war meine beste Schule: Wer dort besteht, liest Menschen, hört zu und kommt mit jedem ins Gespräch."
+                               data-en="Before I taught, I stood behind the bar, worked at the docks and ran a landscaping business in Canada. The bar was my best school: to make it there, you read people, you listen and you can talk to anyone.">
+                                Bevor ich unterrichtet habe, stand ich hinter der Bar, habe im Hafen gearbeitet und in Kanada einen Garten- und Landschaftsbaubetrieb geleitet. Die Bar war meine beste Schule: Wer dort besteht, liest Menschen, hört zu und kommt mit jedem ins Gespräch.
+                            </p>
+                            <p data-de="Seit 17 Jahren trainiere und coache ich – Tausende Lernende: Vorarbeiter und Meister, Werksleiter, CEOs, CFOs und Inhaber. Seit rund zehn Jahren bereite ich zudem Schülerinnen und Schüler aufs Abitur vor und unterrichte in internationalen Hochschulprogrammen, unter anderem an der ESB Business School Reutlingen."
+                               data-en="For 17 years I have trained and coached thousands of learners: foremen and master craftsmen, plant managers, CEOs, CFOs and owners. For about ten years I have also prepared pupils for their Abitur and taught on international university programmes, including at ESB Business School Reutlingen.">
+                                Seit 17 Jahren trainiere und coache ich – Tausende Lernende: Vorarbeiter und Meister, Werksleiter, CEOs, CFOs und Inhaber. Seit rund zehn Jahren bereite ich zudem Schülerinnen und Schüler aufs Abitur vor und unterrichte in internationalen Hochschulprogrammen, unter anderem an der ESB Business School Reutlingen.
+                            </p>
+                            <p data-de="Was sie alle verbindet: Sie wollen verstanden werden – und sie lernen am besten, wenn sie lachen dürfen. Die häufigste Reaktion nach 90 Minuten: „Was, schon vorbei?“"
+                               data-en="What they all have in common: they want to be understood – and they learn best when they're allowed to laugh. The most common reaction after 90 minutes: “What, over already?”">
+                                Was sie alle verbindet: Sie wollen verstanden werden – und sie lernen am besten, wenn sie lachen dürfen. Die häufigste Reaktion nach 90 Minuten: „Was, schon vorbei?“
                             </p>
                         </div>
 
-                        <!-- Credentials Badges -->
-                        <div class="pt-4 flex flex-wrap gap-3">
-                            <span class="px-3.5 py-1.5 rounded-xl bg-cream border border-[#EADAC9] text-xs font-semibold text-textDark flex items-center gap-2">
-                                <i class="fa-solid fa-certificate text-softGold"></i>
-                                Zertifizierter Coach
-                            </span>
-                            <span class="px-3.5 py-1.5 rounded-xl bg-cream border border-[#EADAC9] text-xs font-semibold text-textDark flex items-center gap-2">
-                                <i class="fa-solid fa-brain text-tealSec"></i>
-                                KI-Manager (IHK)
-                            </span>
-                            <span class="px-3.5 py-1.5 rounded-xl bg-cream border border-[#EADAC9] text-xs font-semibold text-textDark flex items-center gap-2">
-                                <i class="fa-solid fa-graduation-cap text-terracotta"></i>
-                                TEFL Certified
-                            </span>
+                        <!-- Path -->
+                        <div class="pt-2">
+                            <p class="text-xs font-bold uppercase tracking-widest text-softGold mb-3" data-de="Stationen" data-en="Milestones">Stationen</p>
+                            <ol class="flex flex-wrap gap-2 text-xs font-medium">
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20">Lorette & Winnipeg</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20" data-de="Ingenieurwesen" data-en="Engineering">Ingenieurwesen</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20">Trier & Mulhouse</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20" data-de="Linguistik" data-en="Linguistics">Linguistik</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20" data-de="Seit 2009 bei Reutlingen" data-en="Near Reutlingen since 2009">Seit 2009 bei Reutlingen</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20" data-de="Abitur & internationale Studiengänge" data-en="Abitur & international programmes">Abitur & internationale Studiengänge</li>
+                                <li class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20" data-de="CEO-Coaching" data-en="CEO coaching">CEO-Coaching</li>
+                            </ol>
                         </div>
 
+                        <div class="pt-2 flex flex-wrap gap-3">
+                            <span class="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 text-xs font-semibold text-white flex items-center gap-2"><i class="fa-solid fa-certificate text-softGold"></i><span data-de="Zertifizierter Coach" data-en="Certified coach">Zertifizierter Coach</span></span>
+                            <span class="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 text-xs font-semibold text-white flex items-center gap-2"><i class="fa-solid fa-brain text-[#62B9A6]"></i>KI-Manager (IHK)</span>
+                            <span class="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 text-xs font-semibold text-white flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-[#E07B50]"></i><span data-de="Studium der Linguistik" data-en="Degree in linguistics">Studium der Linguistik</span></span>
+                            <span class="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 text-xs font-semibold text-white flex items-center gap-2"><i class="fa-solid fa-chalkboard-user text-softGold"></i>TEFL</span>
+                            <span class="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 text-xs font-semibold text-white flex items-center gap-2"><i class="fa-solid fa-language text-[#62B9A6]"></i><span data-de="Französisch · Englisch · Deutsch · etwas Spanisch" data-en="French · English · German · some Spanish">Französisch · Englisch · Deutsch · etwas Spanisch</span></span>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- 10. BOOKING CTA BANNER -->
+        <!-- 10. FINAL CTA -->
         <section id="kontakt" class="py-20 bg-gradient-to-r from-terracotta to-terracottaHover text-white relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-                <h2 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight" data-de="Bereit für lachenden Fortschritt?" data-en="Ready to speak with confidence?">
-                    Bereit für lachenden Fortschritt?
-                </h2>
-                <p class="text-white/90 text-lg max-w-2xl mx-auto font-light"
-                   data-de="Lernen Sie uns in einem kostenlosen, unverbindlichen 30-minütigen Erstgespräch per Zoom kennen."
-                   data-en="Get to know us in a free, no-strings 30-minute first call via Zoom.">
-                    Lernen Sie uns in einem kostenlosen, unverbindlichen 30-minütigen Erstgespräch per Zoom kennen.
-                </p>
+                <h2 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight" data-de="Fangen wir mit einem Gespräch an." data-en="Let's start with a conversation.">Fangen wir mit einem Gespräch an.</h2>
+                <p class="text-white/95 text-lg max-w-2xl mx-auto" data-de="30 Minuten, kostenlos und unverbindlich per Zoom – und Sie merken, wie schnell die Zeit vergeht." data-en="30 minutes, free and without obligation via Zoom – and you'll notice how quickly time flies.">30 Minuten, kostenlos und unverbindlich per Zoom – und Sie merken, wie schnell die Zeit vergeht.</p>
                 <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="https://calendly.com/daniel-lambert01/erstgespraech" target="_blank" rel="noopener" class="px-8 py-4 rounded-full bg-white text-terracotta font-semibold text-base shadow-lg hover:bg-cream transition-all transform hover:-translate-y-0.5">
-                        <span data-de="Kostenloses Erstgespräch buchen" data-en="Book Free Consultation">Kostenloses Erstgespräch buchen</span>
+                        <span data-de="Kostenloses Erstgespräch buchen" data-en="Book a free first call">Kostenloses Erstgespräch buchen</span>
                     </a>
-                    <a href="mailto:info@foundfluency.com" class="px-8 py-4 rounded-full bg-white/10 border border-white/30 text-white font-semibold text-base hover:bg-white/20 transition-all">
+                    <a href="mailto:info@foundfluency.com" class="px-8 py-4 rounded-full bg-white/10 border border-white/40 text-white font-semibold text-base hover:bg-white/20 transition-all">
                         <i class="fa-solid fa-envelope mr-2"></i> info@foundfluency.com
                     </a>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-nightBlue text-white/80 py-16 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
-                
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-terracotta flex items-center justify-center text-white font-serif font-bold text-base">
-                            FF
-                        </div>
+                        <div class="w-9 h-9 rounded-full bg-terracotta flex items-center justify-center text-white font-serif font-bold text-base border border-softGold/30">FF</div>
                         <span class="font-serif font-bold text-2xl text-white tracking-tight">Found Fluency</span>
                     </div>
-                    <p class="text-xs text-white/70 max-w-sm leading-relaxed font-light"
-                       data-de="Sprachschule für Business Englisch & Deutsch im Raum Reutlingen, Stuttgart und Online."
-                       data-en="Language school for Business English & German near Reutlingen, Stuttgart, and Online.">
-                        Sprachschule für Business Englisch & Deutsch im Raum Reutlingen, Stuttgart und Online.
-                    </p>
-                    <p class="text-xs text-white/50">
-                        E-Mail: <a href="mailto:info@foundfluency.com" class="hover:text-softGold transition-colors">info@foundfluency.com</a>
-                    </p>
+                    <p class="text-sm text-white/75 max-w-sm leading-relaxed" data-de="Englisch & Deutsch im Beruf – bei Reutlingen, Stuttgart und online." data-en="English & German at work – near Reutlingen, Stuttgart and online.">Englisch & Deutsch im Beruf – bei Reutlingen, Stuttgart und online.</p>
+                    <p class="text-sm text-white/70">E-Mail: <a href="mailto:info@foundfluency.com" class="hover:text-softGold transition-colors">info@foundfluency.com</a></p>
                 </div>
-
                 <div>
-                    <h4 class="text-white font-bold text-sm mb-4" data-de="Navigation" data-en="Navigation">Navigation</h4>
-                    <ul class="space-y-2 text-xs">
+                    <h4 class="text-white font-bold text-sm mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#onsite-experience" class="hover:text-softGold transition-colors" data-de="Training" data-en="Training">Training</a></li>
+                        <li><a href="#process" class="hover:text-softGold transition-colors" data-de="So arbeiten wir" data-en="How we work">So arbeiten wir</a></li>
                         <li><a href="#offers" class="hover:text-softGold transition-colors" data-de="Angebote" data-en="Offers">Angebote</a></li>
-                        <li><a href="#why-us" class="hover:text-softGold transition-colors" data-de="Warum wir" data-en="Why Us">Warum wir</a></li>
-                        <li><a href="#team" class="hover:text-softGold transition-colors" data-de="Team" data-en="Team">Team</a></li>
                         <li><a href="#pricing" class="hover:text-softGold transition-colors" data-de="Preise" data-en="Pricing">Preise</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h4 class="text-white font-bold text-sm mb-4" data-de="Rechtliches" data-en="Legal">Rechtliches</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="impressum/" class="hover:text-softGold transition-colors" data-de="Impressum" data-en="Legal Notice">Impressum</a></li>
-                        <li><a href="datenschutz/" class="hover:text-softGold transition-colors" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a></li>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="impressum/" class="hover:text-softGold transition-colors" data-de="Impressum" data-en="Legal notice">Impressum</a></li>
+                        <li><a href="datenschutz/" class="hover:text-softGold transition-colors" data-de="Datenschutz" data-en="Privacy policy">Datenschutz</a></li>
                     </ul>
                 </div>
-
             </div>
-
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
-                <p>© <span id="currentYear"></span> Found Fluency – Daniel Lambert. All rights reserved.</p>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+                <p>© <span id="currentYear"></span> Found Fluency – Daniel Lambert</p>
                 <p data-de="Reutlingen / Stuttgart, Deutschland" data-en="Reutlingen / Stuttgart, Germany">Reutlingen / Stuttgart, Deutschland</p>
             </div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Initialize Year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Mobile Menu Toggle
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            document.getElementById('mobileMenu').classList.toggle('hidden');
         }
 
-        // Language Switcher Logic
         let currentLang = 'de';
         function toggleLanguage() {
             currentLang = currentLang === 'de' ? 'en' : 'de';
-            
-            // Update Toggle Button Visual
-            if(currentLang === 'en') {
-                document.getElementById('langDe').className = 'text-textDark/50 font-normal';
-                document.getElementById('langEn').className = 'text-terracotta font-bold';
-            } else {
-                document.getElementById('langDe').className = 'text-terracotta font-bold';
-                document.getElementById('langEn').className = 'text-textDark/50 font-normal';
-            }
-
             document.documentElement.lang = currentLang;
-            updateCalculator();
-
-            // Update all elements with data-de and data-en attributes
+            document.getElementById('langDe').className = currentLang === 'de' ? 'text-softGold font-bold' : 'text-white/60 font-normal';
+            document.getElementById('langEn').className = currentLang === 'en' ? 'text-softGold font-bold' : 'text-white/60 font-normal';
             document.querySelectorAll('[data-de]').forEach(el => {
                 const text = el.getAttribute(`data-${currentLang}`);
-                if(text) {
-                    el.textContent = text;
-                }
+                if (text) el.textContent = text;
             });
+            updateCalculator();
         }
 
-        // AI Interactive Demo Widget Logic
-        function selectAiOption(opt) {
-            const feedbackBox = document.getElementById('aiFeedbackBox');
-            const feedbackText = document.getElementById('aiFeedbackText');
-            
-            feedbackBox.classList.remove('hidden');
-
-            if (opt === 1) {
-                if(currentLang === 'de') {
-                    feedbackText.innerHTML = "<strong>Toll ausgedrückt!</strong> Kleine Empfehlung für mehr Lockerheit: Versuchen Sie statt <em>'nervous to make mistakes'</em> lieber: <em>'I was a bit hesitant at first, but it went smoothly.'</em>";
-                } else {
-                    feedbackText.innerHTML = "<strong>Great job!</strong> Small suggestion for natural flow: Try saying <em>'I was a bit hesitant at first, but it went smoothly'</em> instead of <em>'nervous to make mistakes'</em>.";
-                }
-            } else if (opt === 2) {
-                if(currentLang === 'de') {
-                    feedbackText.innerHTML = "<strong>Punktgenau!</strong> Das Wort für <em>'Standard'</em> im Budget-Kontext ist oft <em>'benchmark'</em> oder <em>'baseline'</em>. Zum Beispiel: <em>'I missed the exact benchmark figure.'</em>";
-                } else {
-                    feedbackText.innerHTML = "<strong>Spot on!</strong> The word for <em>'Standard'</em> in financial contexts is often <em>'benchmark'</em> or <em>'baseline'</em>. E.g.: <em>'I missed the exact benchmark figure.'</em>";
-                }
-            }
-        }
-
-        // Pricing Calculator Logic
+        // Group: €65 covers the minimum of 2 people, each further person adds €7.50
         function updateCalculator() {
-            const slider = document.getElementById('groupSlider');
-            const people = parseInt(slider.value);
-            
-            // Base €65 for min 2 people + €7.50 for each extra person
-            const basePrice = 65;
-            const extraPeople = people - 2;
-            const totalPrice = basePrice + (extraPeople * 7.50);
-            const perPerson = totalPrice / people;
-
-            document.getElementById('calcPeopleCount').textContent = people + (currentLang === 'de' ? ' Personen' : ' People');
-            document.getElementById('calcTotalPrice').textContent = '€ ' + totalPrice.toFixed(2).replace('.', ',');
-            document.getElementById('calcPerPersonPrice').textContent = '€ ' + perPerson.toFixed(2).replace('.', ',');
+            const people = parseInt(document.getElementById('groupSlider').value);
+            const total = 65 + (people - 2) * 7.5;
+            const fmt = (v) => '€ ' + (currentLang === 'de' ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+            document.getElementById('calcPeopleCount').textContent = people + (currentLang === 'de' ? ' Personen' : ' people');
+            document.getElementById('calcTotalPrice').textContent = fmt(total);
+            document.getElementById('calcPerPersonPrice').textContent = fmt(total / people);
         }
-
     </script>
 </body>
 </html>
