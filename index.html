@@ -347,6 +347,16 @@
                     <h2 class="text-4xl sm:text-5xl font-serif font-bold text-textDark" data-de="„Was, schon vorbei?“" data-en="“What, over already?”">„Was, schon vorbei?“</h2>
                     <p class="text-textDark/75 text-base" data-de="Das hören wir am Ende einer Stunde am häufigsten – und das hier ebenso:" data-en="The line we hear most often at the end of a lesson – along with these:">Das hören wir am Ende einer Stunde am häufigsten – und das hier ebenso:</p>
                 </div>
+                <!-- Client quotes carousel: stays hidden until the first real quote (with the person's written permission) is added.
+                     To add one, copy this block inside <div class="t-track"> and fill it in:
+                     <figure class="t-slide">
+                         <blockquote data-de="Zitat auf Deutsch" data-en="Quote in English">Zitat auf Deutsch</blockquote>
+                         <figcaption><strong>Vorname Nachname</strong> · <span data-de="Rolle" data-en="Role">Rolle</span>, Firma</figcaption>
+                     </figure> -->
+                <div id="testimonials" class="t-carousel mb-16" hidden aria-roledescription="carousel" aria-label="Kundenstimmen">
+                    <div class="t-track"></div>
+                    <div class="t-dots" role="tablist"></div>
+                </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-clock text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="Die Zeit vergeht wie im Flug" data-en="Time flies">Die Zeit vergeht wie im Flug</h3><p class="mt-2 text-sm text-textDark/80" data-de="Kaum angefangen, schon ist die Stunde um." data-en="The lesson is over before you know it.">Kaum angefangen, schon ist die Stunde um.</p></div>
                     <div class="bg-cardBg p-8 rounded-3xl border border-[#EADAC9] shadow-warm"><i class="fa-solid fa-face-laugh-beam text-terracotta text-xl"></i><h3 class="mt-4 text-2xl font-serif font-bold text-textDark" data-de="So viel Spaß" data-en="So much fun">So viel Spaß</h3><p class="mt-2 text-sm text-textDark/80" data-de="Es wird viel gelacht – und genau dann bleibt etwas hängen." data-en="There's a lot of laughter – and that's exactly when things stick.">Es wird viel gelacht – und genau dann bleibt etwas hängen.</p></div>
@@ -362,13 +372,8 @@
         <section class="py-16 bg-cream border-b border-[#EADAC9]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p class="text-xs font-semibold uppercase tracking-widest text-textDark/70 mb-8" data-de="Unternehmen, mit denen wir gearbeitet haben" data-en="Companies we have worked with">Unternehmen, mit denen wir gearbeitet haben</p>
-                <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-serif font-bold text-xl sm:text-2xl text-textDark/75">
-                    <span>Bosch</span><span class="text-sm text-terracotta">•</span>
-                    <span>KION Warehouse Systems</span><span class="text-sm text-terracotta">•</span>
-                    <span>WAFIOS</span><span class="text-sm text-terracotta">•</span>
-                    <span>Botek</span><span class="text-sm text-terracotta">•</span>
-                    <span>Towers Watson</span><span class="text-sm text-terracotta">•</span>
-                    <span>Uniplast</span>
+                <div class="client-marquee font-serif font-bold text-xl sm:text-2xl text-textDark/75">
+                    <div class="client-track"><ul class="client-row"><li>Bosch</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>KION Warehouse Systems</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>WAFIOS</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Botek</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Towers Watson</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Uniplast</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Max Holder</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>ElringKlinger</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Schlüter.Hudjetz.Hain + Partner mbB</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Achalm Zahnmedizin</li><li class="text-sm text-terracotta" aria-hidden="true">•</li></ul><ul class="client-row" aria-hidden="true"><li>Bosch</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>KION Warehouse Systems</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>WAFIOS</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Botek</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Towers Watson</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Uniplast</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Max Holder</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>ElringKlinger</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Schlüter.Hudjetz.Hain + Partner mbB</li><li class="text-sm text-terracotta" aria-hidden="true">•</li><li>Achalm Zahnmedizin</li><li class="text-sm text-terracotta" aria-hidden="true">•</li></ul></div>
                 </div>
             </div>
         </section>
@@ -618,6 +623,38 @@
         }
 
         let currentLang = 'de';
+        // Client quotes: show the carousel only once real quotes exist; rotate every 8 s, pause on hover or focus
+        (function () {
+            const box = document.getElementById('testimonials');
+            const slides = box ? box.querySelectorAll('.t-slide') : [];
+            if (!slides.length) return;
+            box.hidden = false;
+            const dots = box.querySelector('.t-dots');
+            let current = 0, paused = false;
+            const show = i => {
+                current = (i + slides.length) % slides.length;
+                slides.forEach((s, n) => s.classList.toggle('is-active', n === current));
+                dots.querySelectorAll('button').forEach((d, n) => d.setAttribute('aria-selected', n === current));
+            };
+            slides.forEach((_, n) => {
+                const d = document.createElement('button');
+                d.type = 'button';
+                d.setAttribute('role', 'tab');
+                d.setAttribute('aria-label', String(n + 1));
+                d.addEventListener('click', () => show(n));
+                dots.appendChild(d);
+            });
+            if (slides.length < 2) dots.hidden = true;
+            box.addEventListener('mouseenter', () => { paused = true; });
+            box.addEventListener('mouseleave', () => { paused = false; });
+            box.addEventListener('focusin', () => { paused = true; });
+            box.addEventListener('focusout', () => { paused = false; });
+            show(0);
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                setInterval(() => { if (!paused) show(current + 1); }, 8000);
+            }
+        })();
+
         function toggleLanguage() {
             currentLang = currentLang === 'de' ? 'en' : 'de';
             document.documentElement.lang = currentLang;
