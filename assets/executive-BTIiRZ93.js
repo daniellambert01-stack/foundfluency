@@ -1,0 +1,1 @@
+var e=`/assets/executive-5ls4mECh.jpg`;export{e as t};

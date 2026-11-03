@@ -1,1 +1,0 @@
-var e=`/assets/team-laughing-DZp2Gz4O.webp`;export{e as t};
