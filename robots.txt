@@ -1,8 +1,10 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /social/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /social/
 
 User-agent: Twitterbot
 Allow: /
@@ -12,5 +14,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /social/
 
 Sitemap: https://www.foundfluency.com/sitemap.xml
