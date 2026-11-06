@@ -1,0 +1,1 @@
+var e=`/assets/team-laughing-DZp2Gz4O.webp`,t=`/assets/videocall-CqGjXkkT.jpg`;export{e as n,t};
